@@ -1,4 +1,5 @@
 /**
+import Link from 'next/link';
  * Hero — Server Component
  * 
  * Redesigned to follow the bright, clean layout architecture of supple.com.au
@@ -86,20 +87,14 @@ const Hero = ({
 
             <AnimatedSection animation="fade-in" delay={300}>
               <div className="flex flex-col sm:flex-row gap-4 mb-8 md:mb-12 justify-center lg:justify-start">
-                <a
-                  href="/seo-audit"
-                  className="group relative px-6 sm:px-8 py-4 bg-seo-navy text-white rounded-md font-bold text-sm sm:text-base tracking-wider uppercase transition-all hover:bg-seo-blue hover:shadow-lg flex items-center justify-center w-full sm:w-auto"
-                >
+                <Link href="/seo-audit" className="group relative px-6 sm:px-8 py-4 bg-seo-navy text-white rounded-md font-bold text-sm sm:text-base tracking-wider uppercase transition-all hover:bg-seo-blue hover:shadow-lg flex items-center justify-center w-full sm:w-auto">
                   Book a Free Consultation
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
-                <a
-                  href="/case-studies"
-                  className="px-6 sm:px-8 py-4 rounded-md font-bold text-sm sm:text-base tracking-wider uppercase text-seo-navy border-2 border-seo-navy hover:bg-seo-navy hover:text-white transition-all flex items-center justify-center group w-full sm:w-auto"
-                >
+                </Link>
+                <Link href="/case-studies" className="px-6 sm:px-8 py-4 rounded-md font-bold text-sm sm:text-base tracking-wider uppercase text-seo-navy border-2 border-seo-navy hover:bg-seo-navy hover:text-white transition-all flex items-center justify-center group w-full sm:w-auto">
                   <Play className="w-4 h-4 mr-2 fill-current group-hover:scale-110 transition-transform" />
                   View Case Studies
-                </a>
+                </Link>
               </div>
             </AnimatedSection>
 

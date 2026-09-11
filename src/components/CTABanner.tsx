@@ -1,4 +1,5 @@
 /**
+import Link from 'next/link';
  * CTABanner — Lightweight CTA for non-conversion pages
  *
  * Replaces the heavy 6-field ContactForm on service/location/industry pages
@@ -45,13 +46,10 @@ const CTABanner = ({ city, industry, service }: CTABannerProps) => {
         <p className="text-slate-300 text-base md:text-lg mb-8 max-w-xl mx-auto">
           {subtext}
         </p>
-        <a
-          href="/seo-audit"
-          className="inline-flex items-center gap-3 bg-white text-seo-navy font-bold py-4 px-8 rounded-xl hover:bg-slate-100 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 group"
-        >
+        <Link href="/seo-audit" className="inline-flex items-center gap-3 bg-white text-seo-navy font-bold py-4 px-8 rounded-xl hover:bg-slate-100 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 group">
           <span>Get My Free Audit</span>
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-        </a>
+        </Link>
         <p className="mt-4 text-slate-400 text-sm">
           No credit card required · Results within 48 hours · No lock-in contracts
         </p>

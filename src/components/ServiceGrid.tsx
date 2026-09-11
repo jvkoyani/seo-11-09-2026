@@ -10,8 +10,8 @@ import {
     Search, Globe, Share2, FileText,
     PenTool, Send, Users, MapPin,
     BarChart, Layout, Video, Image as ImageIcon,
-    Mic, ShoppingBag, Newspaper, Megaphone,
-    Target, Zap, Layers
+    ShoppingBag, Newspaper, Megaphone,
+    Target, Layers
 } from 'lucide-react';
 
 const services = [
@@ -59,7 +59,7 @@ const ServiceCard = ({ item }: { item: typeof services[0] }) => (
     </div>
 );
 
-const MarqueeRow = ({ items, direction = "left", speed = 40 }: { items: typeof services, direction?: "left" | "right", speed?: number }) => {
+const MarqueeRow = ({ items, direction = "left" = 40 }: { items: typeof services, direction?: "left" | "right"?: number }) => {
     // We use the same CSS animation strategy as FeaturedIn.tsx
     const animationClass = direction === "left" ? "animate-marquee" : "animate-marquee2";
     

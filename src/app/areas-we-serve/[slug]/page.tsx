@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import LocationPageTemplate from '@/components/LocationPageTemplate';
-import { isValidCity, getCity, masterCities } from '@/lib/masterCities';
+import { isValidCity, getCity } from '@/lib/masterCities';
 import { injectCity, deepInjectCity } from '@/lib/inject';
 import { caseStudyTemplates } from '@/lib/data';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema, serializeSchemas } from '@/lib/schema';
@@ -25,8 +25,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     return { title: 'Page Not Found' };
 }
-
-
 
 export async function generateStaticParams() {
     const { getBuildCities } = await import('@/lib/route-utils');
@@ -68,7 +66,7 @@ export default async function AreaWeServePage({ params }: Props) {
                 metaTitle: injectCity(`SEO Services in {{city}}`, city.slug, city.name),
                 metaDescription: injectCity(`Professional SEO services in {{city}}`, city.slug, city.name)
             }}
-            injectedCaseStudies={injectedCaseStudies as any[]}
+            injectedCaseStudies={injectedCaseStudies as unknown[]}
             schemaString={schemaString}
         />
     );

@@ -3,8 +3,7 @@ import React from 'react';
 import {
     ArrowRight, MapPin, TrendingUp, BarChart,
     CheckCircle, Award, Users, Target, Star,
-    Compass, Building, ShoppingBag,
-    Phone, ChevronRight, Globe, Lightbulb, Zap, Trophy
+    Building, Phone, ChevronRight, Globe, Zap, Trophy
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -23,7 +22,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Location } from '@/lib/locationData';
 import ServicePricing from '@/components/service/ServicePricing';
-import { services, caseStudyTemplates } from '@/lib/data';
+import { services } from '@/lib/data';
 import {
     generatePageClasses, generateSectionClasses, generateHeadingClass,
     generateCTAClass, generateSectionId, generateDivClass
@@ -229,7 +228,7 @@ const LocationPageTemplate = ({ locationData, injectedCaseStudies, schemaString,
                             Why {locationData.name} Businesses <span className="text-transparent bg-clip-text bg-gradient-to-r from-seo-blue to-cyan-500">Need SEO</span>
                         </h2>
                         <p className="text-sm text-slate-600 font-medium leading-relaxed">
-                            The {locationData.name} digital landscape is evolving. Here's why you can't afford to be invisible.
+                            The {locationData.name} digital landscape is evolving. Here's why you can&apos;t afford to be invisible.
                         </p>
                     </AnimatedSection>
 
@@ -439,7 +438,7 @@ const LocationPageTemplate = ({ locationData, injectedCaseStudies, schemaString,
                                         Ready to Dominate?
                                     </h3>
                                     <p className="text-slate-600 font-medium mb-8 relative z-10">
-                                        Your competitors in {locationData.name} are already investing in SEO. Don't get left behind.
+                                        Your competitors in {locationData.name} are already investing in SEO. Don&apos;t get left behind.
                                     </p>
 
                                     <div className="space-y-4 relative z-10">

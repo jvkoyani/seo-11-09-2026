@@ -1,6 +1,6 @@
-import { notFound, redirect } from 'next/navigation';
+import { redirect } from 'next/navigation';
 import { Metadata } from 'next';
-import { getCity, isValidCity } from '@/lib/masterCities';
+import { getCity } from '@/lib/masterCities';
 import LocationPageTemplate from '@/components/LocationPageTemplate';
 
 type Props = {
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 import { services } from '@/lib/data';
 import JsonLd from '@/components/JsonLd';
-import { generateLocalBusinessSchema, generateBreadcrumbSchema, generateFAQSchema } from '@/lib/schema';
+import { generateFAQSchema } from '@/lib/schema';
 import { masterCities } from '@/lib/masterCities';
 
 import { getLocationPaths } from '@/lib/route-utils';

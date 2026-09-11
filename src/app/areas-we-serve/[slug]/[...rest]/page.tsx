@@ -104,18 +104,6 @@ export default async function AreaCatchAllPage({ params }: Props) {
         const serviceData = services.find(s => s.slug === serviceSlug);
         if (!serviceData) notFound();
 
-        const locationData = {
-            id: city.slug,
-            name: city.name,
-            slug: city.slug,
-            state: "Australia",
-            country: "Australia",
-            image: "/placeholder.svg",
-            description: `${serviceData.title} in ${city.name}`,
-            metaTitle: `${serviceData.title} in ${city.name}`,
-            metaDescription: `Professional ${serviceData.title} services in ${city.name}.`
-        };
-
         const serviceSchema = generateServiceSchema(serviceData, null, city.name, city.slug);
         const localBusinessSchema = generateLocalBusinessSchema(city.name);
         const faqSchema = serviceData.faqs ? generateFAQSchema(serviceData.faqs) : null;
@@ -146,17 +134,7 @@ export default async function AreaCatchAllPage({ params }: Props) {
         if (!service || !industry) notFound();
 
         // Remove icon component to avoid serialization error
-        const { icon, ...serializedIndustry } = industry;
-
-        const locationData = {
-            id: city.slug,
-            name: city.name,
-            slug: city.slug,
-            state: "Australia",
-            country: "Australia",
-            image: "/placeholder.svg",
-            description: `${service.title} for ${industry.title} in ${city.name}`,
-        };
+        const { ...serializedIndustry } = industry;
 
         const serviceSchema = generateServiceSchema(service, industry, city.name, city.slug);
         const localBusinessSchema = generateLocalBusinessSchema(city.name);

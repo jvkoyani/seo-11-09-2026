@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import React from 'react';
 import { ArrowRight, CheckCircle, Building2 } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
@@ -105,14 +106,11 @@ const IndustrySeoServices = ({
             animation="slide-up"
             delay={300}
           >
-            <a
-              href="/industries"
-              className="inline-flex items-center bg-seo-blue hover:bg-seo-blue-light text-white font-medium py-3 px-8 rounded-md transition-colors relative overflow-hidden group"
-            >
+            <Link href="/industries" className="inline-flex items-center bg-seo-blue hover:bg-seo-blue-light text-white font-medium py-3 px-8 rounded-md transition-colors relative overflow-hidden group">
               <span className="relative z-10">View All Industry Solutions</span>
               <ArrowRight className="ml-2 h-4 w-4 relative z-10 group-hover:translate-x-1 transition-transform" />
               <div className="absolute inset-0 bg-gradient-to-r from-seo-blue-light to-seo-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </a>
+            </Link>
           </AnimatedSection>
         )}
       </div>

@@ -1,4 +1,5 @@
 /**
+import Link from 'next/link';
  * LocationSitemap — Server Component
  * 
  * Optimized for SEO/LLMs: renders EVERY single location link directly in the HTML.
@@ -41,10 +42,10 @@ const LocationSitemap = () => {
         <div className="mb-12">
           <div className="flex justify-between items-center mb-6">
             <h3 className="text-xl font-bold text-seo-dark">Australian States & Territories</h3>
-            <a href="/sitemap" className="text-seo-blue hover:underline flex items-center">
+            <Link href="/sitemap" className="text-seo-blue hover:underline flex items-center">
               <span>View full sitemap</span>
               <ArrowRight className="ml-1 h-4 w-4" />
-            </a>
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -127,13 +128,10 @@ const LocationSitemap = () => {
       </AnimatedSection>
 
       <div className="mt-16 text-center">
-        <a
-          href="/sitemap"
-          className="inline-flex items-center justify-center bg-seo-blue text-white px-6 py-3 rounded-md hover:bg-seo-blue-light transition-colors"
-        >
+        <Link href="/sitemap" className="inline-flex items-center justify-center bg-seo-blue text-white px-6 py-3 rounded-md hover:bg-seo-blue-light transition-colors">
           View Complete Sitemap
           <ArrowRight className="ml-2 h-5 w-5" />
-        </a>
+        </Link>
       </div>
     </div>
   );

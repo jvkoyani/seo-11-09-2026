@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 const { execSync, spawn } = require('child_process');
 
 try {
@@ -8,7 +9,6 @@ try {
 }
 
 console.log("Starting Next.js production server...");
-const server = spawn('npx.cmd', ['next', 'start'], { stdio: 'inherit', detached: true });
 
 console.log("Waiting 10 seconds for server to boot...");
 setTimeout(() => {

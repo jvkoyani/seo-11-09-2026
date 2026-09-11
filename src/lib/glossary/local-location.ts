@@ -119,7 +119,7 @@ export const localTerms: GlossaryTerm[] = [
         relatedTerms: ["Local Pack", "Geofencing", "Mobile SEO"],
         content: `
             <h2>The Distance Factor</h2>
-            <p>You can't change where your office is, but you can optimize for proximity by ensuring your map pin is accurate and creating content about local landmarks to reinforce your location relevance.</p>
+            <p>You can&apos;t change where your office is, but you can optimize for proximity by ensuring your map pin is accurate and creating content about local landmarks to reinforce your location relevance.</p>
              <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Optimize for Proximity</h3>
                 <p class="text-slate-600 mb-6">Maximize your visibility within your service radius.</p>

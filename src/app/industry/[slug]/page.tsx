@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import {
     ArrowRight, CheckCircle, Star, Building,
     BarChart, Users, Globe, TrendingUp, Zap,
-    Phone, ChevronRight, Target
+    Phone, ChevronRight
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -305,7 +305,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
                                         Ready to Dominate?
                                     </h3>
                                     <p className="text-slate-600 font-medium mb-8 relative z-10">
-                                        Your competitors are already investing in SEO. Don't get left behind.
+                                        Your competitors are already investing in SEO. Don&apos;t get left behind.
                                     </p>
 
                                     <div className="space-y-4 relative z-10">

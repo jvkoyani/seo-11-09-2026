@@ -1,11 +1,9 @@
 import React from 'react';
 
 import {
-    ArrowRight, MapPin, TrendingUp, BarChart,
-    CheckCircle, Award, Users, Target, Star,
-    Compass, Building, ShoppingBag,
-    Phone, ChevronRight, Globe, Lightbulb, Zap, Trophy,
-    Shield, Rocket
+    ArrowRight, MapPin, TrendingUp, CheckCircle, Target, Star,
+    Building, ChevronRight, Trophy,
+    Shield
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -17,13 +15,7 @@ import FAQSection from '@/components/FAQSection';
 import CaseStudyPreview from '@/components/CaseStudyPreview';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel";
+
 import IndustryCarousel from '@/components/IndustryCarousel';
 import { LocationData, ServiceData, caseStudies, industries } from '@/lib/data';
 
@@ -40,8 +32,6 @@ const ServiceLocationPageTemplate = ({ locationData, serviceData, schemaString }
         .slice(0, 3);
 
     // Dynamic content injection helper
-    const localize = (text: string) => {
-        return text.replace(/{City}/g, locationData.name);
     };
 
     return (
@@ -345,7 +335,7 @@ const ServiceLocationPageTemplate = ({ locationData, serviceData, schemaString }
                             Ready to Transform Your <span className="text-blue-700">{locationData.name} Business?</span>
                         </h2>
                         <p className="text-xl text-slate-600 font-medium mx-auto mb-10 max-w-2xl">
-                            Don't let your competitors win. Get a custom {serviceData.title} strategy designed for the {locationData.name} market today.
+                            Don&apos;t let your competitors win. Get a custom {serviceData.title} strategy designed for the {locationData.name} market today.
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <Button size="lg" className="bg-seo-peach hover:bg-white text-seo-navy h-16 px-10 text-xl rounded-md uppercase font-black tracking-wider shadow-xl transition-colors">
@@ -358,7 +348,6 @@ const ServiceLocationPageTemplate = ({ locationData, serviceData, schemaString }
                     </div>
                 </div>
             </section>
-
 
             <CTABanner city={locationData.name} service={serviceData.title} />
             <Footer />

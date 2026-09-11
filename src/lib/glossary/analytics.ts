@@ -29,7 +29,7 @@ export const analyticsTerms: GlossaryTerm[] = [
         relatedTerms: ["Indexing", "Sitemap", "Crawl Errors"],
         content: `
             <h2>Diagnose Visibility Issues</h2>
-            <p>If your pages aren't in the index, they can't rank. The Coverage report tells you exactly why—whether it's a "noindex" tag, a 404 error, or a "crawled - currently not indexed" status.</p>
+            <p>If your pages aren't in the index, they can&apos;t rank. The Coverage report tells you exactly why—whether it&apos;s a "noindex" tag, a 404 error, or a "crawled - currently not indexed" status.</p>
              <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Fix Indexing Errors</h3>
                 <p class="text-slate-600 mb-6">Ensure every page gets the visibility it deserves.</p>

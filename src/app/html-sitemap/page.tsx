@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import SitemapClient from "@/components/SitemapClient";
 import AnimatedSection from "@/components/AnimatedSection";
 
+import Link from 'next/link';
 import { ChevronRight } from "lucide-react";
 
 export const metadata = {
@@ -25,7 +26,7 @@ export default function SitemapPage() {
                 <div className="container mx-auto px-4 relative z-10">
                     <AnimatedSection className="mb-8" animation="fade-in">
                         <div className="inline-flex items-center space-x-2 text-sm text-slate-400 bg-slate-800/50 px-4 py-2 rounded-full backdrop-blur-sm border border-slate-700">
-                            <a href="/" className="hover:text-white transition-colors">Home</a>
+                            <Link href="/">Home</Link>
                             <ChevronRight className="h-3 w-3" />
                             <span className="text-seo-blue font-medium">Sitemap</span>
                         </div>

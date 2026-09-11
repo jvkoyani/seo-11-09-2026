@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import { ChevronRight, MapPin } from 'lucide-react';
 import { allAustralianCities } from '@/lib/locationData';
@@ -16,12 +17,9 @@ const LocationBreadcrumbs = ({ locationSlug, serviceSlug, className = '' }: Loca
 
   return (
     <div className={`flex flex-wrap items-center text-sm text-seo-gray-dark ${className}`}>
-      <a
-        href="/"
-        className="hover:text-seo-blue transition-colors"
-      >
+      <Link href="/" className="hover:text-seo-blue transition-colors">
         Home
-      </a>
+      </Link>
       <ChevronRight className="h-4 w-4 mx-1 text-seo-gray-medium" />
 
       {/* Country */}

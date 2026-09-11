@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import React from 'react';
 
 import { ArrowRight, Calendar, User, Tag } from 'lucide-react';
@@ -101,10 +102,10 @@ const ServiceBlogTemplate = ({
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button className="bg-seo-blue hover:bg-seo-blue-light text-white">
-            <a href="/free-consultation" className="flex items-center">
+            <Link href="/free-consultation" className="flex items-center">
               Get a Free Consultation
               <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
+            </Link>
           </Button>
           <Button variant="outline" className="border-seo-blue text-seo-blue hover:bg-seo-blue/5">
             <a href={pageUrl} className="flex items-center">

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { TrendingDown, UserX, Trophy, DollarSign, ArrowRight, Search, Clock, AlertTriangle } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
@@ -132,13 +133,10 @@ const PainPoints = () => {
         </div>
 
         <AnimatedSection className="text-center" animation="fade-in" delay={500}>
-          <a
-            href="/seo-audit"
-            className="inline-flex items-center gap-3 bg-seo-peach hover:bg-seo-navy text-seo-navy hover:text-white uppercase tracking-wider font-bold py-4 px-8 rounded-md transition-colors duration-300 shadow-lg group"
-          >
+          <Link href="/seo-audit" className="inline-flex items-center gap-3 bg-seo-peach hover:bg-seo-navy text-seo-navy hover:text-white uppercase tracking-wider font-bold py-4 px-8 rounded-md transition-colors duration-300 shadow-lg group">
             <span>Get Your Free SEO Roadmap</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </a>
+          </Link>
           <p className="mt-4 text-slate-500 font-bold text-sm">No credit card required • Results in 48 hours</p>
         </AnimatedSection>
       </div>

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import { MessageSquare, X, Send, Phone, Mail, Zap } from 'lucide-react';
+import { Send, Phone, Mail, Zap } from 'lucide-react';
 import { useMounted } from '@/lib/ssrSafe';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';

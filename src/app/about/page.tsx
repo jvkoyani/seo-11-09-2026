@@ -4,8 +4,9 @@ import Footer from '@/components/Footer';
 import AnimatedSection from '@/components/AnimatedSection';
 import ContactForm from '@/components/ContactForm';
 import Image from 'next/image';
-import { ChevronRight, Users, Target, Zap, Award, BarChart, Globe, ShieldCheck, Heart, Lightbulb } from 'lucide-react';
-
+import Link from 'next/link';
+import Link from 'next/link';
+import { ChevronRight, Users, Award, BarChart, ShieldCheck, Heart, Lightbulb } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: 'About Us | SEO Experts Since 2010',
@@ -27,7 +28,7 @@ const About = () => {
                 <div className="container mx-auto px-4 relative z-10">
                     <AnimatedSection className="text-center max-w-4xl mx-auto" animation="fade-in">
                         <div className="inline-flex items-center justify-center space-x-2 text-sm text-slate-400 bg-slate-800/50 px-4 py-2 rounded-full backdrop-blur-sm border border-slate-700 mb-8">
-                            <a href="/" className="hover:text-white transition-colors">Home</a>
+                            <Link href="/">Home</Link>
                             <ChevronRight className="h-3 w-3" />
                             <span className="text-seo-blue font-medium">About Us</span>
                         </div>
@@ -81,13 +82,13 @@ const About = () => {
                             </h2>
                             <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
                                 <p>
-                                    Founded in 2010, SEOfocus started as a small team of digital marketing enthusiasts with a vision: to make effective SEO accessible to businesses of all sizes. We believed that search engine optimization shouldn't be shrouded in mystery or filled with empty promises.
+                                    Founded in 2010, SEOfocus started as a small team of digital marketing enthusiasts with a vision: to make effective SEO accessible to businesses of all sizes. We believed that search engine optimization shouldn&apos;t be shrouded in mystery or filled with empty promises.
                                 </p>
                                 <p>
                                     Over the years, we've grown into a full-service SEO agency with offices across Australia, helping hundreds of businesses improve their online visibility and achieve sustainable growth through search. Our approach combines technical expertise, creative content strategies, and data-driven insights to deliver measurable results.
                                 </p>
                                 <p>
-                                    Today, we're proud to be recognized as industry leaders, but we've never lost sight of our original mission: providing transparent, effective SEO services that truly help our clients succeed.
+                                    Today, we&apos;re proud to be recognized as industry leaders, but we've never lost sight of our original mission: providing transparent, effective SEO services that truly help our clients succeed.
                                 </p>
                             </div>
                         </AnimatedSection>
@@ -150,7 +151,7 @@ const About = () => {
                             },
                             {
                                 title: "Client Success",
-                                desc: "We measure our success by our clients' outcomes. If they're not succeeding, neither are we.",
+                                desc: "We measure our success by our clients' outcomes. If they&apos;re not succeeding, neither are we.",
                                 icon: <Heart className="h-6 w-6 text-red-600" />,
                                 color: "bg-red-50",
                                 border: "border-red-100"

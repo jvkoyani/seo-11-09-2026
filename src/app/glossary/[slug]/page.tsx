@@ -1,7 +1,7 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, Clock, User, Share2, Bookmark, ChevronRight, ArrowRight } from 'lucide-react';
+import { Clock, User, Share2, Bookmark, ChevronRight, ArrowRight } from 'lucide-react';
 import { glossaryTerms } from '@/lib/glossaryData';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';

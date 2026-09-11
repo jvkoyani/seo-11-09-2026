@@ -193,7 +193,7 @@ export const onPageTerms: GlossaryTerm[] = [
             <h2>Less is More</h2>
             <p>Having thousands of low-quality pages can drag down your entire site's authority. Pruning involves identifying these "dead weight" pages and either improving them, merging them, or deleting them (with a redirect).</p>
             <h2>When to Prune</h2>
-            <p>If a page has no traffic, no backlinks, and no conversions for the last 12 months, it's a candidate for pruning.</p>
+            <p>If a page has no traffic, no backlinks, and no conversions for the last 12 months, it&apos;s a candidate for pruning.</p>
              <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Clean Up Your Site</h3>
                 <p class="text-slate-600 mb-6">Remove dead weight and boost your overall rankings.</p>

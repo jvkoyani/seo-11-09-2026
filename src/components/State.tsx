@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import React, { useEffect } from 'react';
 
@@ -64,12 +65,9 @@ const State = ({ countrySlug, stateSlug }: StateProps) => {
                 <div className="container mx-auto px-4 relative z-10">
                     <AnimatedSection className="mb-4" animation="fade-in">
                         <div className="inline-flex items-center space-x-2">
-                            <a
-                                href="/"
-                                className="text-seo-gray-dark hover:text-seo-blue transition-colors"
-                            >
+                            <Link href="/" className="text-seo-gray-dark hover:text-seo-blue transition-colors">
                                 Home
-                            </a>
+                            </Link>
                             <ChevronRight className="h-4 w-4 text-seo-gray-medium" />
                             <a
                                 href={`/${countrySlug}`}
@@ -100,15 +98,15 @@ const State = ({ countrySlug, stateSlug }: StateProps) => {
 
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Button size="lg" className="bg-seo-blue hover:bg-seo-blue-light text-white button-hover-effect">
-                                <a href="/free-consultation" className="flex items-center">
+                                <Link href="/free-consultation" className="flex items-center">
                                     Get a Free Consultation
                                     <ArrowRight className="ml-2 h-5 w-5" />
-                                </a>
+                                </Link>
                             </Button>
                             <Button size="lg" variant="outline" className="border-seo-blue text-seo-blue hover:bg-seo-blue/5">
-                                <a href="/case-studies">
+                                <Link href="/case-studies">
                                     View Case Studies
-                                </a>
+                                </Link>
                             </Button>
                         </div>
                     </AnimatedSection>
@@ -242,12 +240,12 @@ const State = ({ countrySlug, stateSlug }: StateProps) => {
                                         </p>
                                     </div>
                                     <div className="flex-shrink-0">
-                                        <a href="/free-consultation">
+                                        <Link href="/free-consultation">
                                             <Button size="lg" className="bg-white text-seo-blue hover:bg-gray-100 w-full md:w-auto">
                                                 Get Started Today
                                                 <ArrowRight className="ml-2 h-5 w-5" />
                                             </Button>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

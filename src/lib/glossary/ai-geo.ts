@@ -73,7 +73,7 @@ export const aiGeoTerms: GlossaryTerm[] = [
         relatedTerms: ["Brand Mentions", "Digital PR", "Training Data"],
         content: `
             <h2>Being in the Training Data</h2>
-            <p>If an LLM doesn't know you exist, it can't recommend you. LLM visibility is built by being mentioned in the datasets these models train on—Wikipedia, major news sites, Reddit, and authoritative industry blogs.</p>
+            <p>If an LLM doesn&apos;t know you exist, it can&apos;t recommend you. LLM visibility is built by being mentioned in the datasets these models train on—Wikipedia, major news sites, Reddit, and authoritative industry blogs.</p>
              <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Boost Your Brand in AI</h3>
                 <p class="text-slate-600 mb-6">Get your brand into the "brain" of the AI.</p>
@@ -91,7 +91,7 @@ export const aiGeoTerms: GlossaryTerm[] = [
         relatedTerms: ["Perplexity SEO", "Bing Chat", "Source Attribution"],
         content: `
             <h2>The New Backlink</h2>
-            <p>In the AI era, a citation is the new click. Even if the user doesn't click, being cited builds immense brand authority. To earn citations, publish original data, unique statistics, and contrarian viewpoints that AI can't find elsewhere.</p>
+            <p>In the AI era, a citation is the new click. Even if the user doesn&apos;t click, being cited builds immense brand authority. To earn citations, publish original data, unique statistics, and contrarian viewpoints that AI can&apos;t find elsewhere.</p>
              <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Earn AI Citations</h3>
                 <p class="text-slate-600 mb-6">Become the source of truth for your industry.</p>
@@ -217,7 +217,7 @@ export const aiGeoTerms: GlossaryTerm[] = [
         relatedTerms: ["Featured Snippet", "AI Overviews", "Brand Awareness"],
         content: `
             <h2>Winning Without Clicking</h2>
-            <p>Zero-click searches are rising. The goal here isn't traffic; it's brand impression. If your brand provides the answer, you build trust. Eventually, for complex queries, the user will click through.</p>
+            <p>Zero-click searches are rising. The goal here isn&apos;t traffic; it&apos;s brand impression. If your brand provides the answer, you build trust. Eventually, for complex queries, the user will click through.</p>
              <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Optimize for Visibility</h3>
                 <p class="text-slate-600 mb-6">Capture the "position zero" and build brand dominance.</p>

@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 import { industries } from '@/lib/data';
 import IndustryLocationPageTemplate from '@/components/IndustryLocationPageTemplate';
 import JsonLd from '@/components/JsonLd';
-import { generateServiceSchema, generateLocalBusinessSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import { generateBreadcrumbSchema } from '@/lib/schema';
 
 export async function generateStaticParams() {
     return industries.map((industry) => ({
@@ -36,7 +36,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
     }
 
     // Remove icon component to avoid serialization error
-    const { icon, ...serializedIndustry } = industry;
+    const { ...serializedIndustry } = industry;
 
     // Create a generic "National" location data object
     const locationData = {

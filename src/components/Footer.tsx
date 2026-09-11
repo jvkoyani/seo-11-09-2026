@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import {
-  Mail, Clock, ChevronRight,
+  Mail, ChevronRight,
   Facebook, Twitter, Linkedin, Instagram, ArrowRight
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -81,7 +81,6 @@ const Footer = () => {
             </div>
 
             <div className="space-y-4 pt-4 border-t border-slate-900">
-
 
               <a href="mailto:hello@seofocus.com.au" className="flex items-center group">
                 <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-seo-blue group-hover:bg-seo-blue group-hover:text-white transition-colors mr-4">

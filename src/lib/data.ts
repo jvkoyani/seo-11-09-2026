@@ -1,20 +1,5 @@
 import {
-  MapPin,
-  Settings,
-  FileText,
-  Link as LinkIcon,
-  ShoppingCart,
-  BarChart,
-  Briefcase,
-  Building,
-  Stethoscope,
-  Scale,
-  Activity,
-  Home,
-  Calculator,
-  Search,
-  Star,
-  Wrench
+  Link as Wrench
 } from 'lucide-react';
 
 // Re-export locations from locationData

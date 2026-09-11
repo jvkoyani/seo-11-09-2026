@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import React, { useState, useEffect } from 'react';
 import { X, ArrowRight } from 'lucide-react';
@@ -30,13 +31,10 @@ const StickyOfferBanner = () => {
                 </div>
                 
                 <div className="flex items-center gap-4 w-full md:w-auto">
-                    <a 
-                        href="/free-consultation" 
-                        className="bg-seo-peach hover:bg-white text-seo-navy px-6 py-3 rounded-md font-bold uppercase tracking-wider text-sm transition-colors duration-300 flex items-center justify-center w-full md:w-auto shadow-lg"
-                    >
+                    <Link href="/free-consultation" className="bg-seo-peach hover:bg-white text-seo-navy px-6 py-3 rounded-md font-bold uppercase tracking-wider text-sm transition-colors duration-300 flex items-center justify-center w-full md:w-auto shadow-lg">
                         Claim Now
                         <ArrowRight className="w-4 h-4 ml-2" />
-                    </a>
+                    </Link>
                     <button 
                         onClick={() => {
                             setIsVisible(false);

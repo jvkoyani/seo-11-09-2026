@@ -38,7 +38,7 @@ const ProblemSolution = ({ serviceTitle }: ProblemSolutionProps) => {
             },
             solution: {
                 title: "Revenue Obsession",
-                description: "We track leads, calls, and sales. If it doesn't make you money, we don't report it as a win.",
+                description: "We track leads, calls, and sales. If it doesn&apos;t make you money, we don't report it as a win.",
                 icon: <CheckCircle className="w-6 h-6 text-green-500" />,
             }
         },

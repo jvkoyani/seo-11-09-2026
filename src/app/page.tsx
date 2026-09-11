@@ -1,8 +1,10 @@
 
+import Link from 'next/link';
 import { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 
 const PainPoints = dynamic(() => import('@/components/PainPoints'), { ssr: true });
 const TrustIndicators = dynamic(() => import('@/components/TrustIndicators'), { ssr: true });
@@ -16,10 +18,10 @@ const UrgencyBanner = dynamic(() => import('@/components/UrgencyBanner'), { ssr:
 import Footer from '@/components/Footer';
 import AnimatedSection from '@/components/AnimatedSection';
 import { ArrowRight, MapPin, CheckCircle2, Zap, Target, TrendingUp } from 'lucide-react';
-import { australianCities, caseStudies, services } from '@/lib/data';
+import { australianCities, caseStudies } from '@/lib/data';
 import CaseStudyPreview from '@/components/CaseStudyPreview';
 import JsonLd from '@/components/JsonLd';
-import { generateWebSiteSchema, generateServiceSchema, serializeSchemas } from '@/lib/schema';
+import { generateWebSiteSchema, serializeSchemas } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'SEO Agency Australia | #1 Rated SEO Services',
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const websiteSchema = generateWebSiteSchema();
-  // Services schema doesn't take just service — needs city context. Use high-level service listing.
+  // Services schema doesn&apos;t take just service — needs city context. Use high-level service listing.
   const schemaString = serializeSchemas([websiteSchema]);
 
   // Get featured case studies
@@ -125,13 +127,10 @@ export default function Home() {
           </div>
 
           <AnimatedSection className="text-center mt-12" animation="fade-in" delay={400}>
-            <a
-              href="/seo-audit"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-seo-blue to-blue-600 text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
-            >
+            <Link href="/seo-audit">
               <span>Start With Free Audit</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
           </AnimatedSection>
         </div>
       </section>
@@ -175,13 +174,10 @@ export default function Home() {
             animation="fade-in"
             delay={300}
           >
-            <a
-              href="/case-studies"
-              className="inline-flex items-center gap-3 bg-seo-dark hover:bg-slate-800 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl group"
-            >
+            <Link href="/case-studies">
               <span>View All Case Studies</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
           </AnimatedSection>
         </div>
       </section>

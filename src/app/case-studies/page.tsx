@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import { Metadata } from 'next';
 import React from 'react';
 
@@ -42,7 +43,7 @@ const CaseStudiesPage = () => {
                         </div>
 
                         <h1 className="text-4xl md:text-6xl font-display font-bold text-white mb-6 leading-tight">
-                            We Don't Just Promise Growth, <br />
+                            We Don&apos;t Just Promise Growth, <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-seo-blue to-purple-400">We Prove It.</span>
                         </h1>
 
@@ -97,12 +98,9 @@ const CaseStudiesPage = () => {
                         <p className="text-xl text-white/80 mb-8">
                             Contact us today for a free consultation and discover how our SEO services can help your business grow.
                         </p>
-                        <a
-                            href="/contact"
-                            className="inline-block bg-seo-blue hover:bg-seo-blue-light text-white font-medium py-3 px-8 rounded-md transition-colors button-hover-effect"
-                        >
+                        <Link href="/contact">
                             Get Started
-                        </a>
+                        </Link>
                     </AnimatedSection>
                 </div>
             </section>

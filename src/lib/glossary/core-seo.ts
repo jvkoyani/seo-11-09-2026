@@ -19,7 +19,7 @@ export const coreSeoTerms: GlossaryTerm[] = [
             <p>SEO is not a one-time task but an ongoing process that involves technical restructuring, content creation, and authority building. It requires a deep understanding of how search engines work, what users are searching for (search intent), and how to deliver the best possible answer to their queries.</p>
 
             <h2>Why is SEO Important?</h2>
-            <p>In today's digital age, search engines are the primary way people find information. If your website doesn't rank on the first page of Google, you are essentially invisible to a vast majority of potential customers. Here are key reasons why SEO is critical:</p>
+            <p>In today's digital age, search engines are the primary way people find information. If your website doesn&apos;t rank on the first page of Google, you are essentially invisible to a vast majority of potential customers. Here are key reasons why SEO is critical:</p>
             <ul>
                 <li><strong>High ROI:</strong> Organic traffic is free and often converts better than paid traffic because users trust organic results more.</li>
                 <li><strong>Credibility and Trust:</strong> Ranking high signals to users that your business is a reputable authority in your industry.</li>
@@ -61,7 +61,7 @@ export const coreSeoTerms: GlossaryTerm[] = [
 
             <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Ready to Improve Your SEO?</h3>
-                <p class="text-slate-600 mb-6">Don't let your competitors dominate the search results. Get a comprehensive audit of your current SEO performance.</p>
+                <p class="text-slate-600 mb-6">Don&apos;t let your competitors dominate the search results. Get a comprehensive audit of your current SEO performance.</p>
                 <a href="/contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-colors">Get Your Free SEO Audit</a>
             </div>
         `
@@ -190,7 +190,7 @@ export const coreSeoTerms: GlossaryTerm[] = [
             <p>Backlinks remain one of the strongest indicators of authority. A link from a high-authority site (like a university or major news outlet) is worth far more than a link from a low-quality blog.</p>
 
             <h3>3. Mobile-Friendliness</h3>
-            <p>With Google's mobile-first indexing, your site is ranked based on its mobile version. If your site isn't responsive or hard to use on a phone, your rankings will suffer.</p>
+            <p>With Google's mobile-first indexing, your site is ranked based on its mobile version. If your site isn&apos;t responsive or hard to use on a phone, your rankings will suffer.</p>
 
             <h3>4. Page Speed (Core Web Vitals)</h3>
             <p>Users hate slow websites, and so does Google. Core Web Vitals are a set of metrics that measure loading performance, interactivity, and visual stability. Passing these metrics is a ranking boost.</p>
@@ -250,7 +250,7 @@ export const coreSeoTerms: GlossaryTerm[] = [
 
             <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Is Your Site Being Crawled?</h3>
-                <p class="text-slate-600 mb-6">If Google can't find your pages, it can't rank them. We ensure your technical foundation is solid.</p>
+                <p class="text-slate-600 mb-6">If Google can&apos;t find your pages, it can&apos;t rank them. We ensure your technical foundation is solid.</p>
                 <a href="/contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-colors">Check My Crawl Status</a>
             </div>
         `
@@ -268,12 +268,12 @@ export const coreSeoTerms: GlossaryTerm[] = [
         relatedTerms: ["Crawling", "Noindex", "Canonical Tag", "Google Index"],
         content: `
             <h2>What is Indexing?</h2>
-            <p>After a search engine bot crawls a page, the next step is <strong>indexing</strong>. This is essentially the filing system of the internet. The search engine analyzes the page's content (text, images, video) and metadata to understand what it's about. This information is then stored in a massive database called the index.</p>
+            <p>After a search engine bot crawls a page, the next step is <strong>indexing</strong>. This is essentially the filing system of the internet. The search engine analyzes the page's content (text, images, video) and metadata to understand what it&apos;s about. This information is then stored in a massive database called the index.</p>
 
-            <p>Think of the index as a library's card catalog. If your book (webpage) isn't in the catalog, no one can find it, no matter how good it is.</p>
+            <p>Think of the index as a library's card catalog. If your book (webpage) isn&apos;t in the catalog, no one can find it, no matter how good it is.</p>
 
-            <h2>Why Pages Get Indexed (or Don't)</h2>
-            <p>Just because a page is crawled doesn't mean it will be indexed. Google may choose not to index a page if:</p>
+            <h2>Why Pages Get Indexed (or Don&apos;t)</h2>
+            <p>Just because a page is crawled doesn&apos;t mean it will be indexed. Google may choose not to index a page if:</p>
             <ul>
                 <li><strong>Low Quality:</strong> The content is thin, duplicate, or spammy.</li>
                 <li><strong>Noindex Directive:</strong> You have explicitly told Google not to index the page using a <code>noindex</code> meta tag.</li>
@@ -311,7 +311,7 @@ export const coreSeoTerms: GlossaryTerm[] = [
             <h2>What is Rendering in SEO?</h2>
             <p>In the early days of the web, pages were simple HTML files. Bots could easily read the text. Today, modern websites rely heavily on <strong>JavaScript</strong> to load content, create interactivity, and build the page structure. This makes the job of search engines harder.</p>
 
-            <p><strong>Rendering</strong> is the step between crawling and indexing where Googlebot acts like a browser. It executes the JavaScript files to see the final content that the user sees. If Googlebot can't render your JavaScript properly, it might miss important content, links, or metadata, leading to poor rankings.</p>
+            <p><strong>Rendering</strong> is the step between crawling and indexing where Googlebot acts like a browser. It executes the JavaScript files to see the final content that the user sees. If Googlebot can&apos;t render your JavaScript properly, it might miss important content, links, or metadata, leading to poor rankings.</p>
 
             <h2>The Rendering Process</h2>
             <p>Google's rendering process (often called the "WRS" or Web Rendering Service) generally happens in two waves:</p>
@@ -350,7 +350,7 @@ export const coreSeoTerms: GlossaryTerm[] = [
             <h2>What is Search Intent?</h2>
             <p>Search intent is the "why" behind a search query. When someone types "best running shoes" into Google, what do they want? Do they want to buy shoes right now? Do they want to see a list of reviews? Do they want to know the history of running shoes?</p>
 
-            <p>Google's primary goal is to satisfy search intent. If your content doesn't match what the user is looking for, you will not rank, no matter how many backlinks you have or how optimized your keywords are.</p>
+            <p>Google's primary goal is to satisfy search intent. If your content doesn&apos;t match what the user is looking for, you will not rank, no matter how many backlinks you have or how optimized your keywords are.</p>
 
             <h2>The Four Types of Search Intent</h2>
             <p>Search intent is generally categorized into four main types:</p>
@@ -411,7 +411,7 @@ export const coreSeoTerms: GlossaryTerm[] = [
             <p>For example, if you search for "election results" or "latest iPhone release," you don't want an article from three years ago. You want news from today. QDF ensures that recent articles rank higher for these types of searches.</p>
 
             <h2>When Does QDF Apply?</h2>
-            <p>QDF doesn't apply to every search. It is triggered by spikes in search volume or news coverage. It typically affects three categories of queries:</p>
+            <p>QDF doesn&apos;t apply to every search. It is triggered by spikes in search volume or news coverage. It typically affects three categories of queries:</p>
 
             <h3>1. Breaking News</h3>
             <p>Events happening right now (e.g., "earthquake in Japan," "Super Bowl score"). Google prioritizes news outlets and live blogs.</p>
@@ -425,7 +425,7 @@ export const coreSeoTerms: GlossaryTerm[] = [
             <h2>How to Leverage QDF</h2>
             <p>Even if you aren't a news site, you can benefit from QDF:</p>
             <ul>
-                <li><strong>Update Content Regularly:</strong> Don't let your guides rot. Update them annually or quarterly with new statistics and trends.</li>
+                <li><strong>Update Content Regularly:</strong> Don&apos;t let your guides rot. Update them annually or quarterly with new statistics and trends.</li>
                 <li><strong>Publish on Trending Topics:</strong> Use Google Trends to identify spikes in your industry and write about them quickly.</li>
                 <li><strong>Date Your Content:</strong> clearly display the "Last Updated" date on your articles.</li>
             </ul>

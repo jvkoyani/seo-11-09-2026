@@ -12,7 +12,7 @@ interface ServiceHeroProps {
     icon: string;
 }
 
-const ServiceHero = ({ title, description, icon }: ServiceHeroProps) => {
+const ServiceHero = ({ title, description }: ServiceHeroProps) => {
     return (
         <section className="relative pt-32 pb-20 overflow-hidden bg-seo-gray-light">
             {/* Background Effects */}

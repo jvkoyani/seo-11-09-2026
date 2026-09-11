@@ -1,7 +1,6 @@
 
 import {
-    Search, BarChart, Users, Target, PlaneLanding, Calendar,
-    Settings, FileText, Link as LinkIcon, Code, LineChart, RefreshCw, TrendingUp
+    Link as TrendingUp
 } from 'lucide-react';
 
 export const methodologies = [

@@ -13,7 +13,7 @@ import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 import AnimatedSection from '@/components/AnimatedSection';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle, MapPin, Briefcase } from 'lucide-react';
+import { Briefcase } from 'lucide-react';
 import Link from 'next/link';
 
 type Props = {
@@ -138,7 +138,7 @@ function ServiceIndustryCityPage({ service, industry, citySlug }: { service: typ
     if (!city) return notFound();
 
     // Remove icon component to avoid serialization error
-    const { icon, ...serializedIndustry } = industry;
+    const { ...serializedIndustry } = industry;
     const injectedCaseStudies = deepInjectCity(caseStudyTemplates, citySlug, city.name);
 
     return (
@@ -187,7 +187,7 @@ export default async function CatchAllPage({ params }: Props) {
         const parsedServiceIndustry = parseServiceIndustry(singleSlug);
         if (parsedServiceIndustry) {
             // Remove icon component to avoid serialization error
-            const { icon, ...serializedIndustry } = parsedServiceIndustry.industry;
+            const { ...serializedIndustry } = parsedServiceIndustry.industry;
 
             // Reuse ServiceIndustryLocation but without city context
             // Or use a new template. For now, we can adapt ServiceIndustryLocation or use IndustryLocationPageTemplate
@@ -206,7 +206,7 @@ export default async function CatchAllPage({ params }: Props) {
         const parsedIndustry = parseIndustryInCity(singleSlug);
         if (parsedIndustry) {
             // Remove icon component to avoid serialization error
-            const { icon, ...serializedIndustry } = parsedIndustry.industry;
+            const { ...serializedIndustry } = parsedIndustry.industry;
 
             return <IndustryLocationPageTemplate industryData={serializedIndustry} locationData={{
                 id: parsedIndustry.citySlug,

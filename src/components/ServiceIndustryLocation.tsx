@@ -1,9 +1,8 @@
 import React from 'react';
 
-
 import {
     ArrowRight, MapPin, TrendingUp, BarChart,
-    CheckCircle, Award, Users, Target, Star,
+    CheckCircle, Users, Target, Star,
     Building, Globe, Phone, ChevronRight, Zap
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -25,7 +24,7 @@ import TrustIndicators from '@/components/TrustIndicators';
 import ServicePricing from '@/components/service/ServicePricing';
 import {
     generatePageClasses, generateSectionClasses, generateHeadingClass,
-    generateCTAClass, generateLinkClass, generateSectionId, generateDivClass
+    generateCTAClass, generateSectionId, generateDivClass
 } from '@/lib/classNames';
 
 interface ServiceData {
@@ -255,7 +254,7 @@ const ServiceIndustryLocation = ({ service, industry, cityName, locationSlug, in
                             Why {pluralIndustry} in {cityName} Need <span className="text-transparent bg-clip-text bg-gradient-to-r from-seo-blue to-purple-500">{service.title}</span>
                         </h2>
                         <p className="text-xl text-seo-gray-dark">
-                            The {industry.title.toLowerCase()} market in {cityName} is competitive. Here is why you can't afford to be invisible.
+                            The {industry.title.toLowerCase()} market in {cityName} is competitive. Here is why you can&apos;t afford to be invisible.
                         </p>
                     </AnimatedSection>
 
@@ -458,7 +457,7 @@ const ServiceIndustryLocation = ({ service, industry, cityName, locationSlug, in
                                         Ready to Dominate?
                                     </h3>
                                     <p className="text-slate-600 font-medium mb-8 relative z-10">
-                                        Your competitors in {cityName} are already investing in SEO. Don't get left behind.
+                                        Your competitors in {cityName} are already investing in SEO. Don&apos;t get left behind.
                                     </p>
 
                                     <div className="space-y-4 relative z-10">

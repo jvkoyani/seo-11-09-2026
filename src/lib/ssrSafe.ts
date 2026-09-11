@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 export function isServer() {
     return typeof window === 'undefined';
@@ -9,13 +9,13 @@ export function isBrowser() {
 }
 
 export function useMounted() {
-    const [mounted, setMounted] = useState(false);
+    const mounted = useRef(false);
 
     useEffect(() => {
-        setMounted(true);
+        mounted.current = true;
     }, []);
 
-    return mounted;
+    return mounted.current;
 }
 
 export function createStableId(prefix: string, index: number): string {

@@ -83,7 +83,7 @@ export const futureConceptsTerms: GlossaryTerm[] = [
         relatedTerms: ["Brand Authority", "Direct Traffic", "Loyalty"],
         content: `
             <h2>Brand is the Moat</h2>
-            <p>In a world of AI content, a trusted brand is the only thing that can't be generated. Google prioritizes brands that users search for by name. The goal of SEO is to make people search for <em>you</em>, not just your service.</p>
+            <p>In a world of AI content, a trusted brand is the only thing that can&apos;t be generated. Google prioritizes brands that users search for by name. The goal of SEO is to make people search for <em>you</em>, not just your service.</p>
              <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Build a Brand, Not Just Links</h3>
                 <p class="text-slate-600 mb-6">Shift your strategy from keywords to brand dominance.</p>

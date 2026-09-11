@@ -1,10 +1,9 @@
 import { Metadata } from 'next';
 import React from 'react';
 
+import Link from 'next/link';
 import {
-    ArrowRight, BarChart, CheckCircle, Award,
-    Users, Target, Star, ShoppingBag, Phone,
-    Lightbulb, ChevronRight, TrendingUp, Building,
+    ArrowRight, BarChart, Users, Target, Lightbulb, TrendingUp, Building,
     Zap, Shield, Globe, Settings
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -53,15 +52,15 @@ const IndustriesPage = () => {
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button asChild size="lg" className="bg-seo-blue hover:bg-seo-blue-light text-white h-14 px-8 text-lg rounded-full shadow-lg shadow-seo-blue/25 transition-all hover:scale-105">
-                                <a href="/free-consultation" className="flex items-center">
+                                <Link href="/free-consultation">
                                     Get Your Strategy
                                     <ArrowRight className="ml-2 h-5 w-5" />
-                                </a>
+                                </Link>
                             </Button>
                             <Button asChild size="lg" variant="outline" className="bg-transparent border-slate-600 text-white hover:bg-white/10 h-14 px-8 text-lg rounded-full backdrop-blur-sm">
-                                <a href="/case-studies">
+                                <Link href="/case-studies">
                                     See Results
-                                </a>
+                                </Link>
                             </Button>
                         </div>
                     </AnimatedSection>
@@ -210,7 +209,7 @@ const IndustriesPage = () => {
                         animation="fade-in"
                     >
                         <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-8 leading-tight">
-                            Don't Settle for Generic SEO. <br />
+                            Don&apos;t Settle for Generic SEO. <br />
                             <span className="text-seo-blue">Get Specialized.</span>
                         </h2>
                         <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
@@ -218,14 +217,14 @@ const IndustriesPage = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button asChild size="lg" className="bg-seo-blue hover:bg-seo-blue-light text-white h-14 px-10 text-lg rounded-full shadow-lg shadow-seo-blue/25 transition-all hover:scale-105">
-                                <a href="/free-consultation">
+                                <Link href="/free-consultation">
                                     Get Your Free Audit
-                                </a>
+                                </Link>
                             </Button>
                             <Button asChild size="lg" variant="outline" className="bg-transparent border-white/20 text-white hover:bg-white/10 h-14 px-10 text-lg rounded-full">
-                                <a href="/contact">
+                                <Link href="/contact">
                                     Talk to an Expert
-                                </a>
+                                </Link>
                             </Button>
                         </div>
                     </AnimatedSection>

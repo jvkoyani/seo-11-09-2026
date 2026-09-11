@@ -2,9 +2,8 @@ import React from 'react';
 
 import {
     ArrowRight, MapPin, TrendingUp, BarChart,
-    CheckCircle, Award, Users, Target, Star,
-    Compass, Building, ShoppingBag,
-    Phone, ChevronRight, Globe, Lightbulb, Zap, Trophy,
+    CheckCircle, Users, Target, Star,
+    ChevronRight, Zap, Trophy,
     Briefcase, Shield, Map as MapIcon, Search,
     Settings, FileText, Link as LinkIcon, ShoppingCart
 } from 'lucide-react';
@@ -18,7 +17,7 @@ import CaseStudyPreview from '@/components/CaseStudyPreview';
 import TrustIndicators from '@/components/TrustIndicators';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { LocationData, ServiceData, IndustryData, caseStudies, services } from '@/lib/data';
+import { LocationData, IndustryData, caseStudies, services } from '@/lib/data';
 
 interface IndustryLocationPageTemplateProps {
     industryData: Omit<IndustryData, 'icon'>;
@@ -206,7 +205,6 @@ const IndustryLocationPageTemplate = ({ industryData, locationData, schemaString
                     </div>
                 </div>
             </section>
-
 
             {/* Why Industry Needs SEO in Location */}
             < section className="py-20 bg-slate-50" >

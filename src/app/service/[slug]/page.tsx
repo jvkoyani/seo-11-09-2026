@@ -2,8 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import {
-    ArrowRight, AlertTriangle, TrendingDown, DollarSign,
-    Clock, ChevronRight, PhoneCall, Trophy, MapPin, Rocket, CheckCircle2
+    ArrowRight, PhoneCall, MapPin, CheckCircle2
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';

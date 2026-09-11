@@ -30,10 +30,16 @@ export async function POST(request: Request) {
         }
 
         // 1. Store in JSON file
-        let subscribers: any[] = [];
+        interface SubscriberRecord {
+            email: string;
+            source: string;
+            date: string;
+            [key: string]: string | undefined;
+        }
+        let subscribers: SubscriberRecord[] = [];
         if (fs.existsSync(DATA_FILE)) {
             const fileContent = fs.readFileSync(DATA_FILE, 'utf-8');
-            const rawData = JSON.parse(fileContent);
+            const rawData: unknown = JSON.parse(fileContent);
 
             // Migrate legacy string array to object array
             if (Array.isArray(rawData)) {

@@ -74,8 +74,8 @@ export const coreWebVitalsTerms: GlossaryTerm[] = [
             <h2>How to Fix CLS</h2>
             <ul>
                 <li><strong>Set Dimensions for Images/Video:</strong> Always include <code>width</code> and <code>height</code> attributes so the browser can reserve space.</li>
-                <li><strong>Reserve Space for Ads:</strong> Don't let ads push content down when they load.</li>
-                <li><strong>Avoid Inserting Content Above Existing Content:</strong> Unless it's in response to a user interaction.</li>
+                <li><strong>Reserve Space for Ads:</strong> Don&apos;t let ads push content down when they load.</li>
+                <li><strong>Avoid Inserting Content Above Existing Content:</strong> Unless it&apos;s in response to a user interaction.</li>
             </ul>
             <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Stabilize Your Layout</h3>
@@ -103,7 +103,7 @@ export const coreWebVitalsTerms: GlossaryTerm[] = [
             </ul>
             <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Is Your Site Mobile-Ready?</h3>
-                <p class="text-slate-600 mb-6">Don't lose traffic because of a poor mobile experience.</p>
+                <p class="text-slate-600 mb-6">Don&apos;t lose traffic because of a poor mobile experience.</p>
                 <a href="/contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-colors">Check Mobile Compatibility</a>
             </div>
         `
@@ -118,7 +118,7 @@ export const coreWebVitalsTerms: GlossaryTerm[] = [
         relatedTerms: ["Rendering", "SPA", "React SEO"],
         content: `
             <h2>The Challenge of JavaScript</h2>
-            <p>Search engines are getting better at executing JavaScript, but it's not perfect. If your content relies entirely on client-side JS, Google might not see it immediately, or at all, if the script fails or times out.</p>
+            <p>Search engines are getting better at executing JavaScript, but it&apos;s not perfect. If your content relies entirely on client-side JS, Google might not see it immediately, or at all, if the script fails or times out.</p>
             <h2>Key Strategies</h2>
             <ul>
                 <li><strong>Server-Side Rendering (SSR):</strong> Render the HTML on the server before sending it to the client.</li>
@@ -164,7 +164,7 @@ export const coreWebVitalsTerms: GlossaryTerm[] = [
             <h2>The Speed of SSG</h2>
             <p>SSG pre-builds every page of your site as a static HTML file. When a user visits, the server simply serves this file. This results in incredibly fast load times (TTFB) and perfect SEO crawlability.</p>
             <h2>When to Use SSG</h2>
-            <p>SSG is ideal for content that doesn't change often, like blogs, documentation, and marketing pages. It is less suitable for highly dynamic content like social media feeds.</p>
+            <p>SSG is ideal for content that doesn&apos;t change often, like blogs, documentation, and marketing pages. It is less suitable for highly dynamic content like social media feeds.</p>
              <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Go Static for Speed</h3>
                 <p class="text-slate-600 mb-6">Maximize your Core Web Vitals with a static site architecture.</p>
@@ -229,7 +229,7 @@ export const coreWebVitalsTerms: GlossaryTerm[] = [
         relatedTerms: ["Crawling", "Log File Analysis", "Site Architecture"],
         content: `
             <h2>Optimizing Crawl Budget</h2>
-            <p>Google doesn't have infinite resources. If your site has millions of pages, or is very slow, Google might not crawl everything. Optimizing crawl budget ensures your most important pages are indexed and updated frequently.</p>
+            <p>Google doesn&apos;t have infinite resources. If your site has millions of pages, or is very slow, Google might not crawl everything. Optimizing crawl budget ensures your most important pages are indexed and updated frequently.</p>
             <h2>Factors Affecting Budget</h2>
             <ul>
                 <li><strong>Site Speed:</strong> Faster sites get crawled more.</li>
@@ -256,7 +256,7 @@ export const coreWebVitalsTerms: GlossaryTerm[] = [
             <p>An XML sitemap acts as a roadmap for search engines. It tells them which pages are important, when they were last updated, and how often they change. This is crucial for large sites or new sites with few backlinks.</p>
             <h2>Best Practices</h2>
             <ul>
-                <li><strong>Only Include Canonical URLs:</strong> Don't include duplicate or noindexed pages.</li>
+                <li><strong>Only Include Canonical URLs:</strong> Don&apos;t include duplicate or noindexed pages.</li>
                 <li><strong>Keep it Updated:</strong> Ensure the sitemap updates automatically when you publish content.</li>
                 <li><strong>Split Large Sitemaps:</strong> Limit each file to 50,000 URLs.</li>
             </ul>

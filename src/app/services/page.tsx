@@ -150,8 +150,6 @@ const Services = () => {
             {/* Testimonials Section */}
             <Testimonials />
 
-
-
             {/* CTA Section */}
             <section className="py-24 bg-seo-dark text-white relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/2 h-full opacity-10">

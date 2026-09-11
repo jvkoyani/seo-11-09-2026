@@ -16,7 +16,7 @@ interface ServiceDeepDiveProps {
     sections: DeepDiveSection[];
 }
 
-const ServiceDeepDive = ({ title, sections }: ServiceDeepDiveProps) => {
+const ServiceDeepDive = ({ sections }: ServiceDeepDiveProps) => {
     const [activeSection, setActiveSection] = useState(0);
 
     useEffect(() => {

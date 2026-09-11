@@ -1,4 +1,5 @@
 /**
+import Link from 'next/link';
  * UrgencyBanner — Server Component
  * 
  * Optimized for SEO: calculates month and spots remaining server-side.
@@ -80,22 +81,16 @@ const UrgencyBanner = () => {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <a
-                                href="/seo-audit"
-                                className="group inline-flex items-center gap-3 bg-white text-seo-navy font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-xl shadow-black/20 hover:shadow-2xl hover:shadow-black/30 hover:scale-105"
-                            >
+                            <Link href="/seo-audit" className="group inline-flex items-center gap-3 bg-white text-seo-navy font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-xl shadow-black/20 hover:shadow-2xl hover:shadow-black/30 hover:scale-105">
                                 <Zap className="w-5 h-5" />
                                 <span>Claim Your Spot Now</span>
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                            </a>
+                            </Link>
 
-                            <a
-                                href="/free-consultation"
-                                className="group inline-flex items-center gap-3 bg-transparent text-white font-semibold py-4 px-8 rounded-full border-2 border-white/50 hover:bg-white/10 hover:border-white transition-all duration-300"
-                            >
+                            <Link href="/free-consultation" className="group inline-flex items-center gap-3 bg-transparent text-white font-semibold py-4 px-8 rounded-full border-2 border-white/50 hover:bg-white/10 hover:border-white transition-all duration-300">
                                 <Phone className="w-5 h-5" />
                                 <span>Schedule Strategy Call</span>
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Trust note */}

@@ -1,7 +1,8 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from "react";
-import { Send, Globe, Star, ChevronRight, CheckCircle, Lock, ShieldCheck, ArrowRight, HelpCircle, BarChart, Zap, Search } from "lucide-react";
+import { Send, Globe, Star, ChevronRight, CheckCircle, Lock, ShieldCheck, ArrowRight, BarChart, Zap, Search } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -144,7 +145,7 @@ export default function SeoAuditPage() {
                 <div className="container mx-auto px-4 relative z-10">
                     <AnimatedSection className="mb-8" animation="fade-in">
                         <div className="inline-flex items-center space-x-2 text-sm text-slate-400 bg-slate-800/50 px-4 py-2 rounded-full backdrop-blur-sm border border-slate-700">
-                            <a href="/" className="hover:text-white transition-colors">Home</a>
+                            <Link href="/">Home</Link>
                             <ChevronRight className="h-3 w-3" />
                             <span className="text-seo-blue font-medium">SEO Audit Tool</span>
                         </div>
@@ -372,7 +373,7 @@ export default function SeoAuditPage() {
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-cyan-200">Improve Your Rankings?</span></h2>
                     <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-                        Don't let technical issues hold your website back. Get your free audit today and start climbing the search results.
+                        Don&apos;t let technical issues hold your website back. Get your free audit today and start climbing the search results.
                     </p>
                     <Button
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

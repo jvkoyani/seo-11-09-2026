@@ -101,7 +101,7 @@ export const ecommerceTerms: GlossaryTerm[] = [
         relatedTerms: ["Automation", "Redirects", "User Experience"],
         content: `
             <h2>Handling Out-of-Stock</h2>
-            <p>Don't show users a 404 page for a sold-out item. Instead, show related products, or redirect to the parent category. Automating this ensures a smooth UX and preserves link equity.</p>
+            <p>Don&apos;t show users a 404 page for a sold-out item. Instead, show related products, or redirect to the parent category. Automating this ensures a smooth UX and preserves link equity.</p>
              <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Automate Your SEO</h3>
                 <p class="text-slate-600 mb-6">Handle inventory changes without losing rankings.</p>

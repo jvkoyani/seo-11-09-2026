@@ -39,7 +39,7 @@ const FAQSection = ({
         },
         {
             question: "How long does it take to see results?",
-            answer: "SEO is a long-term strategy. While some technical fixes can show immediate improvements, significant ranking changes typically take 3-6 months. We provide monthly reports so you can track the progress and see the value we're delivering."
+            answer: "SEO is a long-term strategy. While some technical fixes can show immediate improvements, significant ranking changes typically take 3-6 months. We provide monthly reports so you can track the progress and see the value we&apos;re delivering."
         },
         {
             question: "Do you offer a guarantee for #1 ranking?",

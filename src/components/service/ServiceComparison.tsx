@@ -3,7 +3,7 @@
 import React from 'react';
 import { ComparisonPoint } from '@/lib/data';
 import AnimatedSection from '@/components/AnimatedSection';
-import { Check, X, Minus, Star, ArrowRight, Info, HelpCircle } from 'lucide-react';
+import { Check, X, Minus, Star, ArrowRight, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 import { cn } from '@/lib/utils';

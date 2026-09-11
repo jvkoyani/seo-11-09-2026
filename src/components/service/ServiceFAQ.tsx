@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import React, { useState } from 'react';
 import { FAQItem } from '@/lib/data';
@@ -30,9 +31,9 @@ const ServiceFAQ = ({ faqs }: ServiceFAQProps) => {
                             <p className="text-seo-gray-dark mb-6">
                                 Everything you need to know about our service. Can&apos;t find the answer you&apos;re looking for?
                             </p>
-                            <a href="/contact" className="text-seo-blue font-semibold hover:underline">
+                            <Link href="/contact" className="text-seo-blue font-semibold hover:underline">
                                 Contact our team directly →
-                            </a>
+                            </Link>
                         </div>
                     </AnimatedSection>
 

@@ -51,7 +51,7 @@ const CountryCities = () => {
               </h3>
 
               <div className="grid grid-cols-2 gap-2">
-                {cities.slice(0, 8).map((city, cityIndex) => (
+                {cities.slice(0, 8).map((city) => (
                   <a
                     key={city.id}
                     href={`/areas-we-serve/${city.slug}`}

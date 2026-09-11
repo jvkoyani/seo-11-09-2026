@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 const fs = require('fs');
 try {
   const j = JSON.parse(fs.readFileSync('final_audit_v4.report.json', 'utf8'));

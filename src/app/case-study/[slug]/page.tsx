@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowRight, Building, ChevronLeft, Check, Zap, Target, TrendingUp, Star, Quote, Calendar, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Building, ChevronLeft, Zap, Target, Star, Quote, Calendar, CheckCircle2 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import AnimatedSection from '@/components/AnimatedSection';

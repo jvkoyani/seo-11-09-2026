@@ -80,11 +80,11 @@ export function getCatchAllPaths() {
     params.push({ slug: ['australia'] });
 
     // 2. Major cities and their combinations
-    // For full export, we might want to limit this if it's too large, 
+    // For full export, we might want to limit this if it&apos;s too large, 
     // but for correctness with 'export', we should probably include what's needed.
     // However, the catch-all usually handles the /sydney case which we redirected.
     // The combinations {industry}-in-{city} etc. are numerous.
-    // Let's stick to masterCities for now to be safe, or revert to topCities if it's just for "featured" pages.
+    // Let's stick to masterCities for now to be safe, or revert to topCities if it&apos;s just for "featured" pages.
     // Given the user wants "export", we should probably generate everything that is linked.
 
     // WARNING: This generates millions of pages if we do all combinations for all cities.

@@ -261,7 +261,6 @@ const Navbar = () => {
         >
           <div className="flex flex-col p-6 space-y-6 overflow-y-auto max-h-[calc(100vh-64px)]">
 
-
             <div>
               <button
                 onClick={toggleServices}

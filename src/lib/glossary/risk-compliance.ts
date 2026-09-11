@@ -29,7 +29,7 @@ export const riskComplianceTerms: GlossaryTerm[] = [
         relatedTerms: ["GPTZero", "Originality.ai", "Helpful Content"],
         content: `
             <h2>The Cat and Mouse Game</h2>
-            <p>While Google says it rewards high-quality content regardless of how it's produced, mass-produced, unedited AI content is often flagged as spam. Detection tools help ensure your content maintains a "human" quality.</p>
+            <p>While Google says it rewards high-quality content regardless of how it&apos;s produced, mass-produced, unedited AI content is often flagged as spam. Detection tools help ensure your content maintains a "human" quality.</p>
              <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Humanize Your AI Content</h3>
                 <p class="text-slate-600 mb-6">Ensure your content passes the human test.</p>
@@ -83,7 +83,7 @@ export const riskComplianceTerms: GlossaryTerm[] = [
         relatedTerms: ["Cookie Consent", "Server-Side Tracking", "Compliance"],
         content: `
             <h2>Privacy First</h2>
-            <p>Respecting user privacy is not just a legal requirement; it's a brand requirement. Non-compliance can lead to massive fines and loss of trust. It also affects how we collect SEO data (e.g., cookie-less tracking).</p>
+            <p>Respecting user privacy is not just a legal requirement; it&apos;s a brand requirement. Non-compliance can lead to massive fines and loss of trust. It also affects how we collect SEO data (e.g., cookie-less tracking).</p>
              <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 my-12 text-center">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4">Stay Compliant</h3>
                 <p class="text-slate-600 mb-6">Ensure your tracking setup meets GDPR standards.</p>
