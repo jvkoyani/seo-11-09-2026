@@ -32,7 +32,6 @@ const nextConfig = {
   },
   // Font optimization with system fonts
   experimental: {
-    turbopack: false,
     optimizeCss: true,
     optimizePackageImports: [
       'lucide-react',
@@ -99,7 +98,7 @@ const nextConfig = {
         ],
       },
       {
-        source: '/sitemap*.xml',
+        source: '/:path*(sitemap).xml',
         headers: [
           { key: 'Cache-Control', value: 'public, max-age=86400' },
           { key: 'Content-Type', value: 'application/xml' },

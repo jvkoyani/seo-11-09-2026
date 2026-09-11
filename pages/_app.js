@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { reportWebVitals } from '../lib/performance';
+import { reportWebVitals as trackWebVital } from '../lib/performance';
 
 // Global styles
 import '../styles/globals.css';
@@ -10,15 +10,15 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     // Report Web Vitals for all pages
-    if ('web-vital' in window) {
-      import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-        getCLS(reportWebVitals);
-        getFID(reportWebVitals);
-        getFCP(reportWebVitals);
-        getLCP(reportWebVitals);
-        getTTFB(reportWebVitals);
-      });
-    }
+    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+      getCLS(trackWebVital);
+      getFID(trackWebVital);
+      getFCP(trackWebVital);
+      getLCP(trackWebVital);
+      getTTFB(trackWebVital);
+    }).catch(() => {
+      // Web Vitals unavailable, continue gracefully
+    });
   }, []);
 
   useEffect(() => {
