@@ -272,7 +272,7 @@ const Navbar = () => {
                 <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
               </button>
               <div className={`mt-2 ml-4 transition-all duration-200 space-y-2 ${isServicesOpen ? 'block' : 'hidden'}`}>
-                <a
+                <Link
                   href="/services"
                   className="block py-2 font-medium text-seo-gray-dark hover:text-seo-blue transition-colors"
                   onClick={handleLinkClick}
@@ -280,7 +280,7 @@ const Navbar = () => {
                   All Services
                 </Link>
                 {services.map((service) => (
-                  <a
+                  <Link
                     key={service.id}
                     href={`/service/${service.slug}`}
                     className="block py-2 text-seo-gray-dark hover:text-seo-blue transition-colors"
@@ -301,7 +301,7 @@ const Navbar = () => {
                 <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${isIndustriesOpen ? 'rotate-180' : ''}`} />
               </button>
               <div className={`mt-2 ml-4 transition-all duration-200 space-y-2 ${isIndustriesOpen ? 'block' : 'hidden'}`}>
-                <a
+                <Link
                   href="/industries"
                   className="block py-2 font-medium text-seo-gray-dark hover:text-seo-blue transition-colors"
                   onClick={handleLinkClick}
@@ -309,7 +309,7 @@ const Navbar = () => {
                   All Industries
                 </Link>
                 {industries.map((industry) => (
-                  <a
+                  <Link
                     key={industry.id}
                     href={`/industries/${industry.slug}`}
                     className="block py-2 text-seo-gray-dark hover:text-seo-blue transition-colors"
@@ -331,7 +331,7 @@ const Navbar = () => {
               </button>
               <div className={`mt-2 ml-4 transition-all duration-200 space-y-2 ${isLocationsOpen ? 'block' : 'hidden'}`}>
                 {locations.map((loc) => (
-                  <a
+                  <Link
                     key={loc.id}
                     href={`/areas-we-serve/${loc.slug}`}
                     className="block py-2 text-seo-gray-dark hover:text-seo-blue transition-colors"
@@ -352,7 +352,7 @@ const Navbar = () => {
                 <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${isResourcesOpen ? 'rotate-180' : ''}`} />
               </button>
               <div className={`mt-2 ml-4 transition-all duration-200 space-y-2 ${isResourcesOpen ? 'block' : 'hidden'}`}>
-                <a
+                <Link
                   href="/blogs"
                   className="flex items-center py-2 text-seo-gray-dark hover:text-seo-blue transition-colors"
                   onClick={handleLinkClick}
@@ -360,7 +360,7 @@ const Navbar = () => {
                   <FileText className="h-4 w-4 mr-2" />
                   Blog Articles
                 </Link>
-                <a
+                <Link
                   href="/case-studies"
                   className="flex items-center py-2 text-seo-gray-dark hover:text-seo-blue transition-colors"
                   onClick={handleLinkClick}
@@ -371,7 +371,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            <a
+            <Link
               href="/about"
               className="text-lg font-medium text-seo-dark hover:text-seo-blue transition-colors"
               onClick={handleLinkClick}
@@ -379,7 +379,7 @@ const Navbar = () => {
               About
             </Link>
 
-            <a
+            <Link
               href="/contact"
               className="bg-seo-blue text-white text-center py-3 px-5 rounded-md transition-colors button-hover-effect"
               onClick={handleLinkClick}
