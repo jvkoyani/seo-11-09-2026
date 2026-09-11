@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "slug": "seo-tips-2024",
+    "title": "10 Essential SEO Tips for 2024 That Actually Work",
+    "excerpt": "Discover the proven SEO strategies that are delivering results in 2024. Learn what works, what doesn't, and how to implement it.",
+    "description": "10 SEO tips for 2024: keyword research, technical optimization, content strategy, link building. Proven tactics that deliver rankings and traffic.",
+    "category": "SEO Strategy",
+    "readTime": 8,
+    "relatedServices": ["seo-services", "local-seo", "technical-seo"],
+    "relatedIndustries": ["dental", "legal", "plumbing"]
+  },
+  {
+    "id": 2,
+    "slug": "local-seo-guide",
+    "title": "The Complete Local SEO Guide for Small Businesses",
+    "excerpt": "Master local SEO and dominate your local market. Complete strategy for Google Maps, citations, and local rankings.",
+    "description": "Local SEO guide: Google Business Profile, local citations, reviews, local keywords. How to rank in Google Maps and local search.",
+    "category": "Local SEO",
+    "readTime": 10,
+    "relatedServices": ["local-seo", "seo-services"],
+    "relatedIndustries": ["dental", "plumbing", "hvac", "electrical"]
+  },
+  {
+    "id": 3,
+    "slug": "keyword-research-strategy",
+    "title": "Advanced Keyword Research: Find Keywords That Convert",
+    "excerpt": "Learn the keyword research strategies used by top agencies. Find high-intent keywords that drive sales, not just traffic.",
+    "description": "Keyword research guide: find buyer intent keywords, competitor analysis, keyword gap analysis, search volume and difficulty tools.",
+    "category": "Keyword Research",
+    "readTime": 7,
+    "relatedServices": ["keyword-research", "seo-services"],
+    "relatedIndustries": ["ecommerce", "saas", "consulting"]
+  },
+  {
+    "id": 4,
+    "slug": "technical-seo-checklist",
+    "title": "Technical SEO Checklist: 50-Point Optimization Guide",
+    "excerpt": "Complete technical SEO checklist covering site speed, mobile optimization, indexation, and Core Web Vitals. Improve rankings instantly.",
+    "description": "Technical SEO checklist: site speed, mobile usability, Core Web Vitals, XML sitemaps, robots.txt, indexation, structured data.",
+    "category": "Technical SEO",
+    "readTime": 12,
+    "relatedServices": ["technical-seo", "seo-services", "mobile-optimization"],
+    "relatedIndustries": ["ecommerce", "saas", "technology"]
+  },
+  {
+    "id": 5,
+    "slug": "content-marketing-seo",
+    "title": "Content Marketing for SEO: Write Content That Ranks",
+    "excerpt": "Create content that ranks on Google and converts visitors. The exact formula used by top content marketers.",
+    "description": "Content marketing for SEO: content strategy, topic clusters, keyword optimization, internal linking, content distribution.",
+    "category": "Content Marketing",
+    "readTime": 9,
+    "relatedServices": ["content-marketing", "seo-services"],
+    "relatedIndustries": ["saas", "ecommerce", "technology"]
+  },
+  {
+    "id": 6,
+    "slug": "link-building-strategy",
+    "title": "Modern Link Building: Strategies That Work in 2024",
+    "excerpt": "Stop wasting time on useless link building. Learn modern link building tactics that actually improve rankings.",
+    "description": "Link building strategy: backlink sources, outreach, broken link building, resource pages, digital PR, competitor analysis.",
+    "category": "Link Building",
+    "readTime": 11,
+    "relatedServices": ["link-building", "seo-services"],
+    "relatedIndustries": ["saas", "technology", "consulting"]
+  },
+  {
+    "id": 7,
+    "slug": "google-algorithm-updates",
+    "title": "Google Algorithm Updates Explained: How to Stay Ahead",
+    "excerpt": "Understand recent Google algorithm updates and protect your rankings. Never lose traffic to algorithm changes again.",
+    "description": "Google algorithm updates: core updates, helpful content update, E-E-A-T, recovering from penalty, future-proofing.",
+    "category": "Algorithm Updates",
+    "readTime": 6,
+    "relatedServices": ["seo-audit", "seo-services"],
+    "relatedIndustries": ["ecommerce", "saas"]
+  },
+  {
+    "id": 8,
+    "slug": "competitor-seo-analysis",
+    "title": "Competitor SEO Analysis: Steal Your Competitor's Keywords",
+    "excerpt": "Analyze your competitors' SEO strategy and find gaps they're missing. Identify quick wins and untapped opportunities.",
+    "description": "Competitor SEO analysis: tools, backlinks, keywords, content gaps, ranking opportunities, competitive intelligence.",
+    "category": "Competitive Analysis",
+    "readTime": 8,
+    "relatedServices": ["seo-audit", "keyword-research"],
+    "relatedIndustries": ["ecommerce", "saas", "legal"]
+  },
+  {
+    "id": 9,
+    "slug": "ecommerce-seo",
+    "title": "eCommerce SEO: Rank Products and Increase Sales",
+    "excerpt": "Specialized SEO tactics for eCommerce sites. Rank product pages, increase conversion rates, and boost revenue.",
+    "description": "eCommerce SEO: product page optimization, category pages, schema markup, user generated content, reviews, conversion optimization.",
+    "category": "eCommerce SEO",
+    "readTime": 10,
+    "relatedServices": ["ecommerce-seo", "on-page-seo"],
+    "relatedIndustries": ["ecommerce"]
+  },
+  {
+    "id": 10,
+    "slug": "core-web-vitals-guide",
+    "title": "Core Web Vitals: Complete Guide to Page Speed and UX",
+    "excerpt": "Master Core Web Vitals and improve your site's performance. Get faster load times and better rankings.",
+    "description": "Core Web Vitals: LCP, INP, CLS, page speed optimization, image optimization, web performance, ranking factor.",
+    "category": "Performance",
+    "readTime": 9,
+    "relatedServices": ["technical-seo", "core-web-vitals"],
+    "relatedIndustries": ["ecommerce", "saas", "technology"]
+  }
+]

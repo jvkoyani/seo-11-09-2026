@@ -123,6 +123,24 @@ export default function Home({ services, locations, industries, schemas }) {
           </div>
         </section>
 
+        {/* Blog Section */}
+        <section className="py-16 md:py-24 bg-slate-900 text-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold mb-4 text-center">Read Our Latest Articles</h2>
+            <p className="text-xl text-slate-300 mb-12 text-center max-w-2xl mx-auto">
+              Learn proven SEO strategies, digital marketing tips, and industry insights from our expert team.
+            </p>
+            <div className="text-center">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition text-lg"
+              >
+                Explore Our Blog →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Why Choose Us Section */}
         <section className="py-16 md:py-24 bg-blue-600 text-white">
           <div className="container mx-auto px-4">

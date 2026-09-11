@@ -77,6 +77,17 @@ function generateSiteMap() {
     <loc>${baseUrl}/sitemap-money-pages-4.xml</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
   </sitemap>
+
+  <!-- Tier 4: Blog Content -->
+  <sitemap>
+    <loc>${baseUrl}/sitemap-blog-posts.xml</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+  </sitemap>
+
+  <sitemap>
+    <loc>${baseUrl}/sitemap-blog-locations.xml</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+  </sitemap>
 </sitemapindex>`;
 
   return xml;
