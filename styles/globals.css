@@ -1,0 +1,254 @@
+/* Global styles optimized for Core Web Vitals */
+
+:root {
+  /* System font stack for instant rendering */
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+
+  /* Color scheme */
+  --bg-white: #ffffff;
+  --text-dark: #111827;
+  --text-gray: #6b7280;
+  --border-light: #e5e7eb;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+}
+
+/* Prevent CLS: Remove default margins/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'kern';
+  text-rendering: optimizeLegibility;
+}
+
+/* Prevent images from causing layout shift */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  /* Aspect ratio for responsive images */
+  aspect-ratio: auto;
+}
+
+/* Prevent video embed CLS */
+iframe,
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container query support for flexible layouts */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Link styles without flashing */
+a {
+  color: var(--blue-600);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--blue-700);
+}
+
+/* Button styles with no layout shift */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+/* Form styles without CLS */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 16px; /* Prevents zoom on iOS */
+  line-height: 1.5;
+}
+
+/* Typography for consistent baselines */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 { font-size: 2rem; margin-bottom: 1rem; }
+h2 { font-size: 1.5rem; margin-bottom: 0.875rem; }
+h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+h4 { font-size: 1.125rem; margin-bottom: 0.625rem; }
+h5, h6 { font-size: 1rem; margin-bottom: 0.5rem; }
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* List styles */
+ul, ol {
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Code styles */
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: #f3f4f6;
+  padding: 0.125em 0.375em;
+  border-radius: 3px;
+}
+
+pre {
+  background: #1f2937;
+  color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+}
+
+th {
+  font-weight: 600;
+  background: #f9fafb;
+}
+
+/* Utility classes for performance */
+.lazy-load {
+  background-color: #f3f4f6;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lazy-load.loaded {
+  opacity: 1;
+}
+
+/* Prevent cumulative layout shift with defined grid gap */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+  .grid.cols-2,
+  .grid.cols-3,
+  .grid.cols-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Flex utilities with no gap shift */
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111827;
+    color: #f3f4f6;
+  }
+
+  code {
+    background: #1f2937;
+    color: #e5e7eb;
+  }
+
+  th {
+    background: #1f2937;
+  }
+}
+
+/* Focus styles for accessibility without CLS */
+:focus-visible {
+  outline: 2px solid var(--blue-600);
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
