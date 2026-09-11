@@ -1,0 +1,48 @@
+# Robots.txt for pSEO Site
+# Optimized for 33,000+ pages across multiple tiers
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin/private paths (add as needed)
+Disallow: /api/
+Disallow: /admin/
+
+# Crawl delay (in seconds) - prevents server overload
+# Most search engines respect this
+Crawl-delay: 1
+
+# Request rate (pages per second)
+Request-rate: 10/1s
+
+# Primary Sitemap Index
+Sitemap: https://seo-11-09-2026.vercel.app/sitemap.xml
+
+# Alternative: Direct sitemap references for search engines that support multiple sitemaps
+Sitemap: https://seo-11-09-2026.vercel.app/sitemap-homepage.xml
+Sitemap: https://seo-11-09-2026.vercel.app/sitemap-services.xml
+Sitemap: https://seo-11-09-2026.vercel.app/sitemap-industries.xml
+Sitemap: https://seo-11-09-2026.vercel.app/sitemap-locations.xml
+Sitemap: https://seo-11-09-2026.vercel.app/sitemap-service-location.xml
+Sitemap: https://seo-11-09-2026.vercel.app/sitemap-service-industry.xml
+Sitemap: https://seo-11-09-2026.vercel.app/sitemap-industry-location.xml
+Sitemap: https://seo-11-09-2026.vercel.app/sitemap-money-pages-1.xml
+Sitemap: https://seo-11-09-2026.vercel.app/sitemap-money-pages-2.xml
+Sitemap: https://seo-11-09-2026.vercel.app/sitemap-money-pages-3.xml
+Sitemap: https://seo-11-09-2026.vercel.app/sitemap-money-pages-4.xml
+
+# Note: Googlebot and other search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots (optional)
+User-agent: MJ12bot
+User-agent: AhrefsBot
+Disallow: /
