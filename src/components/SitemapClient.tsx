@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
+import Link from 'next/link';
 
 import { MapPin, Layers, ExternalLink, Search, ChevronDown, ChevronUp, Briefcase, Building, FileText, Compass } from 'lucide-react';
 import { Input } from '@/components/ui/input';
@@ -294,10 +295,10 @@ export default function SitemapClient() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-                                    <a href="/contact">Contact Us</a>
+                                    <Link href="/contact">Contact Us</Link>
                                 </Button>
                                 <Button asChild size="lg" className="bg-white/20 border border-white/50 text-white hover:bg-white hover:text-blue-600">
-                                    <a href="/free-consultation">Free Consultation</a>
+                                    <Link href="/free-consultation">Free Consultation</Link>
                                 </Button>
                             </div>
                         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import AnimatedSection from '@/components/AnimatedSection';
 import { CheckCircle, AlertTriangle, Search, Map } from 'lucide-react';
 
@@ -177,9 +178,9 @@ const LocalSEOGuideSection = ({ locationName }: LocalSEOGuideSectionProps) => {
                         <p className="text-sm text-slate-600 font-medium mb-8 max-w-2xl mx-auto leading-relaxed">
                             Local SEO is not a one-time task; it&apos;s an ongoing strategy. To stay ahead of your competitors in {locationName}, you need a dedicated partner.
                         </p>
-                        <a href="/contact" className="bg-seo-peach text-seo-navy hover:text-white hover:bg-seo-navy font-bold py-4 px-8 rounded-full transition-colors shadow-lg uppercase tracking-wider inline-block">
+                        <Link href="/contact" className="bg-seo-peach text-seo-navy hover:text-white hover:bg-seo-navy font-bold py-4 px-8 rounded-full transition-colors shadow-lg uppercase tracking-wider inline-block">
                             Get Your Free Audit
-                        </a>
+                        </Link>
                     </div>
                 </AnimatedSection>
             </div>

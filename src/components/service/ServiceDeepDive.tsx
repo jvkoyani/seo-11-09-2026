@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import AnimatedSection from '@/components/AnimatedSection';
 
 import { BookOpen, ChevronRight, List, ArrowRight, AlertCircle } from 'lucide-react';
@@ -155,13 +156,10 @@ const ServiceDeepDive = ({ sections }: ServiceDeepDiveProps) => {
                                     <p className="text-slate-400 mb-8 max-w-2xl mx-auto text-lg">
                                         You don't have to become an SEO expert to win. Let our team handle the technical heavy lifting while you focus on your business.
                                     </p>
-                                    <a
-                                        href="/contact"
-                                        className="inline-flex items-center gap-2 bg-seo-blue text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-seo-blue-light transition-all hover:scale-105 shadow-lg shadow-seo-blue/25"
-                                    >
+                                    <Link href="/contact" className="inline-flex items-center gap-2 bg-seo-blue text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-seo-blue-light transition-all hover:scale-105 shadow-lg shadow-seo-blue/25">
                                         Get a Custom Strategy
                                         <ArrowRight className="w-5 h-5" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </AnimatedSection>

@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import Link from 'next/link';
 import AnimatedSection from '@/components/AnimatedSection';
 import { ChevronDown, MessageCircleQuestion, HelpCircle } from 'lucide-react';
 
@@ -89,7 +90,7 @@ const FAQSection = ({
                                     <div>
                                         <h4 className="font-bold text-seo-dark mb-1">Still have questions?</h4>
                                         <p className="text-sm text-seo-gray-dark mb-4">Can't find the answer you're looking for? Please chat to our friendly team.</p>
-                                        <a href="/contact" className="text-seo-blue font-medium hover:underline">Get in touch &rarr;</a>
+                                        <Link href="/contact" className="text-seo-blue font-medium hover:underline">Get in touch &rarr;</Link>
                                     </div>
                                 </div>
                             </div>

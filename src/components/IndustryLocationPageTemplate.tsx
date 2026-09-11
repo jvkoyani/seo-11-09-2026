@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import {
     ArrowRight, MapPin, TrendingUp, BarChart,
@@ -61,7 +62,7 @@ const IndustryLocationPageTemplate = ({ industryData, locationData, schemaString
                 <div className="container mx-auto px-4 relative z-10">
                      <AnimatedSection className="mb-8" animation="fade-in">
                         <div className="inline-flex items-center space-x-2 text-xs md:text-sm text-slate-500 bg-white/50 px-4 py-2 rounded-full border border-slate-200 shadow-sm font-medium">
-                            <a href="/" className="hover:text-seo-blue transition-colors">Home</a>
+                            <Link href="/" className="hover:text-seo-blue transition-colors">Home</Link>
                             <ChevronRight className="h-3 w-3" />
                             <a href={`/areas-we-serve/${locationData.slug}`} className="hover:text-seo-blue transition-colors">{locationData.name}</a>
                             <ChevronRight className="h-3 w-3" />
@@ -92,10 +93,10 @@ const IndustryLocationPageTemplate = ({ industryData, locationData, schemaString
 
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Button size="lg" className="bg-seo-peach hover:bg-seo-navy text-seo-navy hover:text-white font-bold h-14 px-8 text-base rounded-full shadow-lg transition-all hover:scale-105 uppercase tracking-wider">
-                                    <a href="/free-consultation" className="flex items-center">
+                                    <Link href="/free-consultation" className="flex items-center">
                                         Get Free Consultation
                                         <ArrowRight className="ml-2 h-5 w-5" />
-                                    </a>
+                                    </Link>
                                 </Button>
                                 <Button size="lg" variant="outline" className="bg-white border-seo-navy text-seo-navy hover:bg-seo-gray-light font-bold h-14 px-8 text-lg rounded-full shadow-sm uppercase tracking-wider transition-colors">
                                     <a href="#services">
@@ -150,9 +151,9 @@ const IndustryLocationPageTemplate = ({ industryData, locationData, schemaString
                                     </div>
 
                                     <Button className="w-full bg-white text-slate-900 hover:bg-gray-100 font-bold h-12 text-lg">
-                                        <a href="/seo-audit">
+                                        <Link href="/seo-audit">
                                             Start Your Growth
-                                        </a>
+                                        </Link>
                                     </Button>
                                 </CardContent>
                             </Card>

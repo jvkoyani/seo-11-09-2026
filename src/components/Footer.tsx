@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 
 import {
@@ -55,9 +56,9 @@ const Footer = () => {
           {/* Column 1: Brand & Contact (4 cols) */}
           <div className="lg:col-span-4 space-y-8">
             <div>
-              <a href="/" className="inline-block mb-4">
+              <Link href="/" className="inline-block mb-4">
                 <Image src="/logo.webp" alt="SEOfocus" width={160} height={48} className="h-10 md:h-12 w-auto brightness-0 invert" />
-              </a>
+              </Link>
               <p className="text-slate-400 leading-relaxed mb-6 max-w-sm">
                 We help ambitious businesses dominate search results and drive revenue through data-driven SEO strategies.
               </p>
@@ -190,9 +191,9 @@ const Footer = () => {
               © {new Date().getFullYear()} SEOfocus. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm text-slate-300">
-              <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="/sitemap" className="hover:text-white transition-colors">Sitemap</a>
+              <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+              <Link href="/sitemap" className="hover:text-white transition-colors">Sitemap</Link>
             </div>
             <div className="flex items-center text-sm text-slate-300">
               <a

@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 import { Menu, X, ChevronDown, FileText, Briefcase } from 'lucide-react';
 import Image from 'next/image';
 import AnimatedSection from './AnimatedSection';
@@ -55,8 +56,9 @@ const Navbar = () => {
     };
   }, [isMenuOpen]);
 
-  // eslint-disable-next-line
+  // Close menus when pathname changes
   useEffect(() => {
+    const menuState = { isMenuOpen, isLocationsOpen, isServicesOpen, isIndustriesOpen, isResourcesOpen };
     setIsMenuOpen(false);
     setIsLocationsOpen(false);
     setIsServicesOpen(false);
@@ -74,17 +76,17 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
-            <a href="/" className="flex items-center" onClick={handleLinkClick}>
+            <Link href="/" className="flex items-center" onClick={handleLinkClick}>
               <Image 
                 src="/logo.webp" 
                 alt="Power My SEO" 
                 width={120} 
                 height={36} 
                 sizes="(max-width: 768px) 120px, 120px"
-                className="h-10 md:h-12 w-auto" 
-                priority={true} 
+                className="h-10 md:h-12 w-auto"
+                priority={true}
               />
-            </a>
+            </Link>
 
             <div className="hidden md:flex items-center space-x-8">
 
@@ -104,23 +106,23 @@ const Navbar = () => {
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
                   <div className="py-2 grid grid-cols-1 gap-1">
-                    <a
+                    <Link
                       href="/services"
                       className="block px-4 py-2 text-sm font-medium text-seo-dark hover:bg-seo-gray-light hover:text-seo-blue transition-colors"
                       onClick={handleLinkClick}
                     >
                       All Services
-                    </a>
+                    </Link>
                     <div className="h-px bg-gray-100 my-1 mx-4"></div>
                     {services.map((service) => (
-                      <a
+                      <Link
                         key={service.id}
                         href={`/service/${service.slug}`}
                         className="block px-4 py-2 text-sm text-seo-dark hover:bg-seo-gray-light hover:text-seo-blue transition-colors"
                         onClick={handleLinkClick}
                       >
                         {service.title}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -141,23 +143,23 @@ const Navbar = () => {
                   onMouseLeave={() => setIsIndustriesOpen(false)}
                 >
                   <div className="py-2 grid grid-cols-1 gap-1">
-                    <a
+                    <Link
                       href="/industries"
                       className="block px-4 py-2 text-sm font-medium text-seo-dark hover:bg-seo-gray-light hover:text-seo-blue transition-colors"
                       onClick={handleLinkClick}
                     >
                       All Industries
-                    </a>
+                    </Link>
                     <div className="h-px bg-gray-100 my-1 mx-4"></div>
                     {industries.map((industry) => (
-                      <a
+                      <Link
                         key={industry.id}
                         href={`/industries/${industry.slug}`}
                         className="block px-4 py-2 text-sm text-seo-dark hover:bg-seo-gray-light hover:text-seo-blue transition-colors"
                         onClick={handleLinkClick}
                       >
                         {industry.title}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -179,14 +181,14 @@ const Navbar = () => {
                 >
                   <div className="py-2 grid grid-cols-1 gap-1">
                     {locations.map((loc) => (
-                      <a
+                      <Link
                         key={loc.id}
                         href={`/areas-we-serve/${loc.slug}`}
                         className="block px-4 py-2 text-sm text-seo-dark hover:bg-seo-gray-light hover:text-seo-blue transition-colors"
                         onClick={handleLinkClick}
                       >
                         {loc.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -207,40 +209,40 @@ const Navbar = () => {
                   onMouseLeave={() => setIsResourcesOpen(false)}
                 >
                   <div className="py-2 grid grid-cols-1 gap-1">
-                    <a
+                    <Link
                       href="/blogs"
                       className="flex items-center px-4 py-2 text-sm text-seo-dark hover:bg-seo-gray-light hover:text-seo-blue transition-colors"
                       onClick={handleLinkClick}
                     >
                       <FileText className="h-4 w-4 mr-2" />
                       Blog Articles
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="/case-studies"
                       className="flex items-center px-4 py-2 text-sm text-seo-dark hover:bg-seo-gray-light hover:text-seo-blue transition-colors"
                       onClick={handleLinkClick}
                     >
                       <Briefcase className="h-4 w-4 mr-2" />
                       Case Studies
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
-              <a
+              <Link
                 href="/about"
                 className="text-seo-dark hover:text-seo-blue font-medium transition-colors"
                 onClick={handleLinkClick}
               >
                 About
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="/contact"
                 className="bg-seo-blue hover:bg-seo-blue-light text-white font-medium py-2 px-5 rounded-md transition-colors button-hover-effect"
                 onClick={handleLinkClick}
               >
                 Contact
-              </a>
+              </Link>
             </div>
 
             <button
@@ -276,7 +278,7 @@ const Navbar = () => {
                   onClick={handleLinkClick}
                 >
                   All Services
-                </a>
+                </Link>
                 {services.map((service) => (
                   <a
                     key={service.id}
@@ -285,7 +287,7 @@ const Navbar = () => {
                     onClick={handleLinkClick}
                   >
                     {service.title}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -305,7 +307,7 @@ const Navbar = () => {
                   onClick={handleLinkClick}
                 >
                   All Industries
-                </a>
+                </Link>
                 {industries.map((industry) => (
                   <a
                     key={industry.id}
@@ -314,7 +316,7 @@ const Navbar = () => {
                     onClick={handleLinkClick}
                   >
                     {industry.title}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -336,7 +338,7 @@ const Navbar = () => {
                     onClick={handleLinkClick}
                   >
                     {loc.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -357,7 +359,7 @@ const Navbar = () => {
                 >
                   <FileText className="h-4 w-4 mr-2" />
                   Blog Articles
-                </a>
+                </Link>
                 <a
                   href="/case-studies"
                   className="flex items-center py-2 text-seo-gray-dark hover:text-seo-blue transition-colors"
@@ -365,7 +367,7 @@ const Navbar = () => {
                 >
                   <Briefcase className="h-4 w-4 mr-2" />
                   Case Studies
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -375,7 +377,7 @@ const Navbar = () => {
               onClick={handleLinkClick}
             >
               About
-            </a>
+            </Link>
 
             <a
               href="/contact"
@@ -383,7 +385,7 @@ const Navbar = () => {
               onClick={handleLinkClick}
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}
