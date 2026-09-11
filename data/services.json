@@ -1,0 +1,22 @@
+[
+  { "id": 1, "name": "SEO Services", "slug": "seo-services", "description": "Search engine optimization to rank higher and get more organic traffic" },
+  { "id": 2, "name": "Local SEO", "slug": "local-seo", "description": "Dominate local search results and Google Maps rankings" },
+  { "id": 3, "name": "Technical SEO", "slug": "technical-seo", "description": "Fix technical issues that prevent search engines from ranking your site" },
+  { "id": 4, "name": "On-Page SEO", "slug": "on-page-seo", "description": "Optimize page content, titles, meta descriptions, and headers" },
+  { "id": 5, "name": "Link Building", "slug": "link-building", "description": "Build high-quality backlinks to improve domain authority" },
+  { "id": 6, "name": "Content Marketing", "slug": "content-marketing", "description": "Create valuable content that ranks and converts visitors to customers" },
+  { "id": 7, "name": "Keyword Research", "slug": "keyword-research", "description": "Find high-value keywords your customers are searching for" },
+  { "id": 8, "name": "SEO Audit", "slug": "seo-audit", "description": "Complete website analysis to identify ranking opportunities" },
+  { "id": 9, "name": "PPC Management", "slug": "ppc-management", "description": "Manage Google Ads and paid search campaigns for immediate traffic" },
+  { "id": 10, "name": "Social Media Marketing", "slug": "social-media-marketing", "description": "Grow your social media presence and engagement" },
+  { "id": 11, "name": "Email Marketing", "slug": "email-marketing", "description": "Build email lists and nurture leads with effective campaigns" },
+  { "id": 12, "name": "Conversion Rate Optimization", "slug": "conversion-rate-optimization", "description": "Increase sales by optimizing your website for conversions" },
+  { "id": 13, "name": "Web Design", "slug": "web-design", "description": "Create beautiful, functional websites that convert" },
+  { "id": 14, "name": "Web Development", "slug": "web-development", "description": "Build fast, secure, scalable web applications" },
+  { "id": 15, "name": "E-Commerce SEO", "slug": "ecommerce-seo", "description": "Rank products and categories to increase online sales" },
+  { "id": 16, "name": "Mobile Optimization", "slug": "mobile-optimization", "description": "Optimize your website for mobile devices and users" },
+  { "id": 17, "name": "Core Web Vitals", "slug": "core-web-vitals", "description": "Improve page speed, loading, and user experience metrics" },
+  { "id": 18, "name": "International SEO", "slug": "international-seo", "description": "Expand your reach to international markets with multi-language SEO" },
+  { "id": 19, "name": "Voice Search Optimization", "slug": "voice-search-optimization", "description": "Optimize for voice search and smart speaker devices" },
+  { "id": 20, "name": "Enterprise SEO", "slug": "enterprise-seo", "description": "Large-scale SEO solutions for enterprise websites" }
+]
