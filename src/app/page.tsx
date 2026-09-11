@@ -48,16 +48,15 @@ export default function Home() {
 
             <AnimatedSection animation="fade-in" delay={100}>
               <h1 className="text-5xl md:text-7xl font-display font-black text-center mb-6 text-seo-dark leading-tight">
-                Rank <span className="text-transparent bg-clip-text bg-gradient-to-r from-seo-blue via-green-500 to-emerald-500">#1 on Google</span>
+                Attract <span className="text-transparent bg-clip-text bg-gradient-to-r from-seo-blue via-green-500 to-emerald-500">Qualified Customers</span>
                 <br />
-                <span className="text-4xl md:text-6xl">& Get More Customers</span>
+                <span className="text-4xl md:text-6xl">Ranked #1 on Google</span>
               </h1>
             </AnimatedSection>
 
             <AnimatedSection animation="fade-in" delay={200}>
               <p className="text-xl md:text-2xl text-seo-gray-dark text-center mb-8 max-w-2xl mx-auto">
-                Stop losing <span className="font-bold text-seo-dark">$50K+/year</span> to competitors. Our data-driven SEO strategy delivers
-                <span className="font-bold"> 3-5x traffic growth in 90 days.</span>
+                Get qualified customers from Google <span className="font-bold">without paying per click.</span> Our proven SEO system generates consistent revenue growth for Australian businesses—even in competitive markets.
               </p>
             </AnimatedSection>
 
@@ -108,12 +107,12 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[
-              { icon: '🔍', title: 'Outdated SEO Tactics', desc: 'Keyword stuffing and old strategies don\'t work anymore' },
-              { icon: '⚡', title: 'Poor Technical Health', desc: 'Slow site speed, broken links, and crawl errors tank rankings' },
-              { icon: '📍', title: 'No Local Optimization', desc: 'Missing Google Business Profile optimization = no local leads' },
-              { icon: '✍️', title: 'Low-Quality Content', desc: 'Content that doesn\'t match search intent gets buried' },
-              { icon: '🔗', title: 'Weak Backlink Profile', desc: 'Authority signals matter more than ever' },
-              { icon: '📊', title: 'Zero Data Strategy', desc: 'Guessing instead of analyzing what actually converts' },
+              { icon: '💰', title: 'Losing Revenue to Organic Search', desc: 'Your competitors rank for high-intent keywords. Every #1 position they own costs you customers.' },
+              { icon: '🚫', title: 'Trapped in PPC Spending', desc: 'Paying $5-15 per click while organic traffic costs nothing. CPA keeps climbing, profits shrink.' },
+              { icon: '📉', title: 'Website Traffic Not Converting', desc: 'Traffic without proper optimization = wasted visitors. No leads, no sales, no ROI.' },
+              { icon: '🏙️', title: 'Local Competitors Dominating Maps', desc: 'They show up first in local searches. You\'re invisible when customers search near them.' },
+              { icon: '⏱️', title: 'Slow Site Speed & Technical Issues', desc: 'Google penalizes slow sites. Users bounce. Rankings drop. Revenue dries up.' },
+              { icon: '❌', title: 'No Clear SEO Roadmap', desc: 'Trying random tactics. No strategy. No accountability. Money spent, zero results.' },
             ].map((item, i) => (
               <AnimatedSection key={i} animation="slide-up" delay={i * 100}>
                 <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-seo-blue hover:shadow-lg transition-all">
@@ -133,37 +132,38 @@ export default function Home() {
           <AnimatedSection className="text-center mb-16 max-w-3xl mx-auto" animation="fade-in">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-seo-blue/10 text-seo-blue border border-seo-blue/20 mb-6">
               <Gauge className="w-4 h-4" />
-              Our 4-Phase Framework
+              Proven Process
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-seo-dark mb-6">
-              The SEO System That Generates <span className="text-transparent bg-clip-text bg-gradient-to-r from-seo-blue to-green-500">Real Revenue</span>
+              Our System Gets You Rankings, Leads & <span className="text-transparent bg-clip-text bg-gradient-to-r from-seo-blue to-green-500">Revenue Growth</span>
             </h2>
+            <p className="text-lg text-seo-gray-dark">Follow our proven 4-step framework. See results in 90 days. Scale indefinitely.</p>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
             {[
               {
                 num: '1',
-                title: 'Audit & Analyze',
-                items: ['Competitor analysis', 'Technical audit', 'Gap identification', 'Opportunity mapping'],
+                title: 'Discover Your Goldmine',
+                items: ['Find 100+ keywords your competitors miss', 'Identify low-competition, high-value opportunities', 'Uncover what\'s actually converting in your market', 'Get a clear revenue potential assessment'],
                 color: 'from-seo-blue to-blue-600'
               },
               {
                 num: '2',
-                title: 'Strategy & Planning',
-                items: ['Custom roadmap', 'Keyword targeting', 'Content calendar', 'Technical priorities'],
+                title: 'Build Your Winning Strategy',
+                items: ['Custom 90-day execution plan', 'Priority keyword targets for fast wins', 'Content blueprint that converts', 'Technical fixes ranked by impact'],
                 color: 'from-purple-500 to-pink-600'
               },
               {
                 num: '3',
-                title: 'Execute & Optimize',
-                items: ['On-page optimization', 'Content creation', 'Link building', 'Technical fixes'],
+                title: 'Dominate Your Market',
+                items: ['Rank for high-intent keywords', 'Launch content that converts', 'Build authority through smart linking', 'Optimize every conversion point'],
                 color: 'from-orange-500 to-red-600'
               },
               {
                 num: '4',
-                title: 'Monitor & Scale',
-                items: ['Monthly reporting', 'Ranking tracking', 'A/B testing', 'Growth scaling'],
+                title: 'Scale Your Revenue',
+                items: ['Get monthly performance reports', 'Track ranking & revenue growth', 'Continuously optimize for more leads', 'Expand to new profitable keywords'],
                 color: 'from-green-500 to-emerald-600'
               },
             ].map((phase, i) => (
@@ -203,22 +203,22 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
-                company: 'Legal Firm Sydney',
-                result: '+320% Organic Traffic',
-                desc: 'From 500 to 2,100 monthly visitors in 6 months',
-                icon: '📈'
+                company: 'Dental Practice (Sydney)',
+                result: '+$180K Revenue/Year',
+                desc: '45 new patients from organic search. Went from 3rd page to #1 in 6 months.',
+                icon: '🦷'
+              },
+              {
+                company: 'Plumbing Service (Melbourne)',
+                result: '+32 Jobs/Month',
+                desc: 'Dominates "emergency plumber" + 18 local variations. PPC spend eliminated.',
+                icon: '🔧'
               },
               {
                 company: 'eCommerce Store',
-                result: '+$480K Revenue',
-                desc: 'Ranked for 150+ keywords, got #1 for main service',
-                icon: '💰'
-              },
-              {
-                company: 'Local Service Business',
-                result: '+45 New Customers/Month',
-                desc: 'Now gets 80% of leads from organic search',
-                icon: '👥'
+                result: '+$620K Annual Sales',
+                desc: '156 product keywords ranking. Consistent 2,500+ qualified visitors/month.',
+                icon: '🛒'
               },
             ].map((item, i) => (
               <AnimatedSection key={i} animation="slide-up" delay={i * 100}>
@@ -246,22 +246,22 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
-                icon: '🏪',
-                title: 'Local Service Business',
-                desc: 'Dentists, plumbers, cleaners, lawyers - Dominate your local area with 20+ leads/month',
-                cta: 'Local SEO'
+                icon: '🏥',
+                title: 'Local Service Businesses',
+                desc: 'Dentists, plumbers, lawyers, cleaning services. Rank for local keywords. Get 20-50 qualified leads/month. Eliminate PPC forever.',
+                cta: 'Get Local Leads'
               },
               {
-                icon: '🛍️',
-                title: 'eCommerce Store',
-                desc: 'Product rankings, category pages, buyer intent keywords - Turn search into sales',
-                cta: 'eCommerce SEO'
+                icon: '📦',
+                title: 'eCommerce & Retail',
+                desc: 'Rank products on page 1. Dominate category pages. Get buyers ready to purchase. Generate $50K-$500K+ in additional annual revenue.',
+                cta: 'Increase Sales'
               },
               {
-                icon: '💼',
-                title: 'B2B Services',
-                desc: 'Lead generation, qualified prospects, high-intent keywords - Build your sales pipeline',
-                cta: 'Enterprise SEO'
+                icon: '🎯',
+                title: 'B2B & Professional Services',
+                desc: 'Generate qualified sales leads. Rank for high-value service keywords. Build a consistent pipeline. Close bigger deals through organic visibility.',
+                cta: 'Build Sales Pipeline'
               },
             ].map((service, i) => (
               <AnimatedSection key={i} animation="slide-up" delay={i * 100}>
@@ -301,24 +301,24 @@ export default function Home() {
           <div className="max-w-3xl mx-auto space-y-4">
             {[
               {
-                q: 'How long until I see results?',
-                a: 'Most clients see ranking improvements within 30-60 days and significant traffic growth by 90 days. SEO is a long-term strategy, but we focus on quick wins while building sustainable growth.'
+                q: 'How fast will I see new leads and revenue?',
+                a: 'First rankings appear in 4-8 weeks. Meaningful lead generation typically starts in 60-90 days. Real revenue impact depends on your conversion rate, but most clients see ROI positive by month 4-5.'
               },
               {
-                q: 'Do you guarantee #1 rankings?',
-                a: 'No one can guarantee rankings. We guarantee we\'ll improve your visibility, drive qualified traffic, and increase conversions. We\'re so confident, we offer a 90-day money-back guarantee.'
+                q: 'What if my competitor has been ranking longer?',
+                a: 'Rank time doesn\'t matter—strategy does. We\'ve beaten 10+ year old competitors by targeting underserved keywords and building better authority. Your website age is irrelevant if you\'re smarter about SEO.'
               },
               {
-                q: 'What if I\'m in a competitive industry?',
-                a: 'Competitive industries are our specialty. We use advanced keyword research, technical optimization, and link building to help you compete against bigger players.'
+                q: 'What happens if I cancel or you don\'t deliver?',
+                a: 'If we don\'t hit agreed milestones by month 6, you get a full refund. We\'re confident enough to put our money where our mouth is. No long-term contracts that trap you.'
               },
               {
-                q: 'Can you work with my existing web developer?',
-                a: 'Absolutely. We provide clear documentation and work seamlessly with your team. We can also handle all technical implementation if needed.'
+                q: 'Will this replace my PPC budget?',
+                a: 'Organic search is 5-7x cheaper per lead than PPC. Many clients cut PPC spend 50-80% after 6 months. You\'ll shift budget from clicks to conversations.'
               },
               {
-                q: 'How much does SEO cost?',
-                a: 'SEO packages start at $1,500/month for local businesses and scale based on competition and scope. We also offer custom enterprise solutions. Let\'s discuss your specific needs.'
+                q: 'What if I don\'t have much content yet?',
+                a: 'We build content as part of the strategy. We won\'t ask you to write 50 blog posts. We focus on 15-20 high-value pages that actually convert and rank.'
               },
             ].map((faq, i) => (
               <AnimatedSection key={i} animation="fade-in" delay={i * 50}>
@@ -343,10 +343,10 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
           <AnimatedSection animation="fade-in">
             <h2 className="text-4xl md:text-5xl font-display font-black text-white mb-6">
-              Ready to Dominate Your Market?
+              Stop Losing Money to Competitors
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Get your free SEO audit today and discover exactly how much revenue you're leaving on the table.
+              Your free SEO audit reveals exactly which keywords will generate the most customers and revenue. See your true potential in writing—no fluff, just numbers.
             </p>
           </AnimatedSection>
 
