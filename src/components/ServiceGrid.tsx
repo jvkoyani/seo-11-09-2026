@@ -59,7 +59,7 @@ const ServiceCard = ({ item }: { item: typeof services[0] }) => (
     </div>
 );
 
-const MarqueeRow = ({ items, direction = "left" = 40 }: { items: typeof services, direction?: "left" | "right"?: number }) => {
+const MarqueeRow = ({ items, direction = "left" }: { items: typeof services, direction?: "left" | "right" }) => {
     // We use the same CSS animation strategy as FeaturedIn.tsx
     const animationClass = direction === "left" ? "animate-marquee" : "animate-marquee2";
     
@@ -99,8 +99,8 @@ const ServiceGrid = () => {
             </div>
 
             <div className="relative z-10 space-y-2">
-                <MarqueeRow items={row1} direction="left" speed={40} />
-                <MarqueeRow items={row2} direction="right" speed={45} />
+                <MarqueeRow items={row1} direction="left" />
+                <MarqueeRow items={row2} direction="right" />
             </div>
         </div>
     );

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import {
     ArrowRight, MapPin, TrendingUp, CheckCircle, Target, Star,
@@ -17,10 +18,11 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 import IndustryCarousel from '@/components/IndustryCarousel';
-import { LocationData, ServiceData, caseStudies, industries } from '@/lib/data';
+import { ServiceData, caseStudies, industries } from '@/lib/data';
+import { SimpleLocation } from '@/lib/masterCities';
 
 interface ServiceLocationPageTemplateProps {
-    locationData: LocationData;
+    locationData: SimpleLocation;
     serviceData: ServiceData;
     schemaString?: string;
 }
@@ -30,9 +32,6 @@ const ServiceLocationPageTemplate = ({ locationData, serviceData, schemaString }
     const relevantCaseStudies = caseStudies
         .filter(cs => cs.serviceType === serviceData.slug)
         .slice(0, 3);
-
-    // Dynamic content injection helper
-    };
 
     return (
         <div className="min-h-screen flex flex-col font-sans bg-slate-50">
@@ -55,9 +54,9 @@ const ServiceLocationPageTemplate = ({ locationData, serviceData, schemaString }
                 <div className="container mx-auto px-4 relative z-10">
                     <AnimatedSection className="mb-8" animation="fade-in">
                          <div className="inline-flex items-center space-x-2 text-xs md:text-sm text-slate-500 bg-white/50 px-4 py-2 rounded-full border border-slate-200 shadow-sm font-medium">
-                            <a href="/" className="hover:text-seo-blue transition-colors">Home</a>
+                            <Link href="/" className="hover:text-seo-blue transition-colors">Home</Link>
                             <ChevronRight className="h-3 w-3" />
-                            <a href={`/areas-we-serve/${locationData.slug}`} className="hover:text-seo-blue transition-colors">{locationData.name}</a>
+                            <Link href={`/areas-we-serve/${locationData.slug}`} className="hover:text-seo-blue transition-colors">{locationData.name}</Link>
                             <ChevronRight className="h-3 w-3" />
                             <span className="text-seo-blue font-bold tracking-wide">{serviceData.title}</span>
                         </div>
@@ -85,17 +84,13 @@ const ServiceLocationPageTemplate = ({ locationData, serviceData, schemaString }
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Button size="lg" className="bg-seo-navy hover:bg-seo-blue text-white h-14 px-8 text-base rounded-md uppercase font-bold tracking-wider shadow-lg transition-all hover:scale-[1.02]">
-                                    <a href="/free-consultation" className="flex items-center">
-                                        Get Free Consultation
-                                        <ArrowRight className="ml-2 h-5 w-5" />
-                                    </a>
-                                </Button>
-                                <Button size="lg" variant="outline" className="bg-transparent border-2 border-seo-navy text-seo-navy hover:bg-seo-navy hover:text-white h-14 px-8 text-lg rounded-md uppercase font-bold tracking-wider transition-all">
-                                    <a href="#case-studies">
-                                        View Case Studies
-                                    </a>
-                                </Button>
+                                <Link href="/free-consultation" className="bg-seo-navy hover:bg-seo-blue text-white h-14 px-8 text-base rounded-md uppercase font-bold tracking-wider shadow-lg transition-all hover:scale-[1.02] inline-flex items-center justify-center">
+                                    Get Free Consultation
+                                    <ArrowRight className="ml-2 h-5 w-5" />
+                                </Link>
+                                <Link href="#case-studies" className="bg-transparent border-2 border-seo-navy text-seo-navy hover:bg-seo-navy hover:text-white h-14 px-8 text-lg rounded-md uppercase font-bold tracking-wider transition-all inline-flex items-center justify-center">
+                                    View Case Studies
+                                </Link>
                             </div>
                         </AnimatedSection>
 

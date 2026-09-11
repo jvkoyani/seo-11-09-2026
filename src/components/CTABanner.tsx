@@ -1,12 +1,5 @@
-/**
-import Link from 'next/link';
- * CTABanner — Lightweight CTA for non-conversion pages
- *
- * Replaces the heavy 6-field ContactForm on service/location/industry pages
- * to reduce form fatigue. Directs users to the dedicated /seo-audit page.
- */
-
 import React from 'react';
+import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 interface CTABannerProps {

@@ -1,13 +1,5 @@
-/**
-import Link from 'next/link';
- * UrgencyBanner — Server Component
- * 
- * Optimized for SEO: calculates month and spots remaining server-side.
- * Uses 100% server-rendered HTML for time-sensitive marketing signals.
- * Zero client-side JavaScript required for initial display.
- */
-
 import React from 'react';
+import Link from 'next/link';
 import { Zap, Clock, ArrowRight, Phone } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 

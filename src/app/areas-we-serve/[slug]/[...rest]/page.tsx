@@ -117,7 +117,7 @@ export default async function AreaCatchAllPage({ params }: Props) {
 
         return (
             <ServiceLocationPageTemplate
-                locationData={locationData}
+                locationData={city}
                 serviceData={serviceData}
                 schemaString={schemaString}
             />

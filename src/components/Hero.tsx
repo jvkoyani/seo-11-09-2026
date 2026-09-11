@@ -1,11 +1,5 @@
-/**
-import Link from 'next/link';
- * Hero — Server Component
- * 
- * Redesigned to follow the bright, clean layout architecture of supple.com.au
- */
-
 import React from 'react';
+import Link from 'next/link';
 import { ArrowRight, Play, CheckCircle2, Star } from 'lucide-react';
 import Image from 'next/image';
 import AnimatedSection from './AnimatedSection';

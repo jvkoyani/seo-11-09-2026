@@ -5,7 +5,6 @@ import AnimatedSection from '@/components/AnimatedSection';
 import ContactForm from '@/components/ContactForm';
 import Image from 'next/image';
 import Link from 'next/link';
-import Link from 'next/link';
 import { ChevronRight, Users, Award, BarChart, ShieldCheck, Heart, Lightbulb } from 'lucide-react';
 
 export const metadata: Metadata = {

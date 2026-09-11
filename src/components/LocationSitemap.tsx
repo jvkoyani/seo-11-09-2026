@@ -1,13 +1,5 @@
-/**
-import Link from 'next/link';
- * LocationSitemap — Server Component
- * 
- * Optimized for SEO/LLMs: renders EVERY single location link directly in the HTML.
- * This is crucial for a project with 107,000 pages to ensure crawlers can find them.
- * No JavaScript required for browsing the full list.
- */
-
 import React from 'react';
+import Link from 'next/link';
 import { allAustralianCities } from '@/lib/locationData';
 import { services } from '@/lib/data';
 import { MapPin, ArrowRight, Globe } from 'lucide-react';
